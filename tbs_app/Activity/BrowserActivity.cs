@@ -50,33 +50,19 @@ namespace tbs_app
 
         private static Java.Net.URL mIntentUrl;
 
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            currentActivity = this;
 
             Window.SetFormat(Android.Graphics.Format.Translucent);
 
             Intent intent = Intent;
 
-            if (intent != null)
+            if (intent != null && intent.Data != null)
             {
-                try
-                {
-                    mIntentUrl = new Java.Net.URL(intent.Data.ToString());
-                }
-                catch (Java.Net.MalformedURLException e)
-                {
-                    e.PrintStackTrace();
-                }
-                catch (Java.Lang.NullPointerException e)
-                {
-
-                }
-                catch (Java.Lang.Exception e)
-                {
-                }
-
+                mIntentUrl = new Java.Net.URL(intent.Data.ToString());
             }
 
 
