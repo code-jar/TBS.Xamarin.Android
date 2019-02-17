@@ -14,9 +14,9 @@ using Com.Tencent.Smtt.Sdk;
 namespace tbs_app
 {
     [Application]
-    public class APPAplication : Application
+    public class APPApplication : Application
     {
-        public APPAplication(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer) { }
+        public APPApplication(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer) { }
 
 
         public override void OnCreate()

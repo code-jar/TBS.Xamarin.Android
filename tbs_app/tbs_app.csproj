@@ -59,7 +59,7 @@
     <Compile Include="Activity\BrowserActivity.cs" />
     <Compile Include="Activity\FilechooserActivity.cs" />
     <Compile Include="Activity\FullScreenActivity.cs" />
-    <Compile Include="APPAplication.cs" />
+    <Compile Include="APPApplication.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +67,7 @@
     <Compile Include="utils\X5WebView.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidNativeLibrary Include="jniLibs\armeabi\liblbs.so" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />

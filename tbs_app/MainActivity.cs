@@ -7,6 +7,7 @@ using Android.Content;
 using System.Collections.Generic;
 using System;
 using Android.Views;
+using Java.Lang;
 
 namespace tbs_app
 {
@@ -15,7 +16,7 @@ namespace tbs_app
     {
 
         public static bool firstOpening = true;
-        private static string[] titles = null;
+        //private static string[] titles = null;
 
         public static int MSG_WEBVIEW_CONSTRUCTOR = 1;
         public static int MSG_WEBVIEW_POLLING = 2;
@@ -67,8 +68,6 @@ namespace tbs_app
             if (keyCode == Keycode.Back)
                 this.TbsSuiteExit();
 
-
-
             return base.OnKeyDown(keyCode, e);
         }
 
@@ -78,7 +77,7 @@ namespace tbs_app
                 .SetTitle("X5功能演示")
                 .SetPositiveButton("OK", new BrowserActivity.CusDownloadListener.CusDialogInterfaceOnClickListener((dialog, arg) =>
                 {
-                    Process.KillProcess(Process.MyPid());
+                    Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
                 }))
                 .SetMessage("quit now?")
                 .Create()
@@ -92,29 +91,74 @@ namespace tbs_app
             this.gridView = FindViewById<GridView>(Resource.Id.item_grid);
 
             if (gridView == null)
-                throw new Java.Lang.IllegalArgumentException("the gridView is null");
+                throw new Java.Lang.IllegalArgumentException("the gridView is null");            
 
-            titles = Resources.GetStringArray(Resource.Array.index_titles);
-            int[] iconResourse = { Resource.Drawable.tbsweb, Resource.Drawable.fullscreen, Resource.Drawable.filechooser };
+            this.gridView.Adapter = new CusAdapter(this);
+            this.gridView.OnItemClickListener = new OnItemClickListener(this);
 
-            for (int i = 0; i < titles.Length; i++)
-            {
-                items.Add(new Dictionary<string, object> { { "title", titles[i] }, { "icon", iconResourse[i] } });
-            }
+            //var titles = Resources.GetStringArray(Resource.Array.index_titles);
+            //int[] iconResourse = { Resource.Drawable.tbsweb, Resource.Drawable.fullscreen, Resource.Drawable.filechooser };
 
-            this.gridAdapter = new SimpleAdapter(this, items, Resource.Layout.function_block, new String[] { "title", "icon" }, new int[] { Resource.Id.Item_text, Resource.Id.Item_bt });
+            //for (int i = 0; i < titles.Length; i++)
+            //{
+            //    items.Add(new Dictionary<string, object> { { "title", titles[i] }, { "icon", iconResourse[i] } });
+            //}
+            //this.gridAdapter = new SimpleAdapter(mContext, items, Resource.Layout.function_block, new string[] { "title", "icon" }, new int[] { Resource.Id.Item_text, Resource.Id.Item_bt });
 
-            if (null != this.gridView)
-            {
-                this.gridView.Adapter = gridAdapter;
-                this.gridAdapter.NotifyDataSetChanged();
-                this.gridView.OnItemClickListener = new OnItemClickListener(this);
-            }
+            //if (null != this.gridView)
+            //{
+            //    //this.gridView.Adapter = gridAdapter;
+            //    //this.gridAdapter.NotifyDataSetChanged();
+            //    //this.gridView.OnItemClickListener = new OnItemClickListener(this);
+            //}
 
             main_initialized = true;
 
         }
 
+        internal class CusAdapter : BaseAdapter
+        {
+            readonly Context context;
+            readonly string[] titles;
+            readonly int[] iconResources;
+            List<IDictionary<string, object>> items = new List<IDictionary<string, object>>();
+
+            public CusAdapter(Context c)
+            {
+                context = c;
+
+
+                titles = context.Resources.GetStringArray(Resource.Array.index_titles);
+                iconResources = new int[] { Resource.Drawable.tbsweb, Resource.Drawable.fullscreen, Resource.Drawable.filechooser };
+
+                for (int i = 0; i < titles.Length; i++)
+                {
+                    items.Add(new Dictionary<string, object> { { "title", titles[i] }, { "icon", iconResources[i] } });
+                }
+            }
+
+
+            public override int Count => titles.Length;
+
+            public override Java.Lang.Object GetItem(int position)
+            {
+                return null;
+            }
+
+            public override long GetItemId(int position)
+            {
+                return position;
+            }
+
+            public override View GetView(int position, View convertView, ViewGroup parent)
+            {
+                if (convertView == null)
+                    convertView = View.Inflate(context, Resource.Layout.function_block, null);
+
+
+                return convertView;
+            }
+        }
 
         internal class OnItemClickListener : Java.Lang.Object, AdapterView.IOnItemClickListener
         {
@@ -139,7 +183,6 @@ namespace tbs_app
                             currentActivity.StartActivity(new Intent(currentActivity, typeof(FullScreenActivity)));
                         }
                         break;
-
                     case TBS_WEB:
                         {
                             currentActivity.StartActivity(new Intent(currentActivity, typeof(BrowserActivity)));
