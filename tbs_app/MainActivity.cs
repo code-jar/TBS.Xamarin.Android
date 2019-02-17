@@ -2,12 +2,12 @@
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
-using Android.Widget;
 using Android.Content;
 using System.Collections.Generic;
 using System;
 using Android.Views;
 using Java.Lang;
+using Android.Widget;
 
 namespace tbs_app
 {
@@ -30,9 +30,7 @@ namespace tbs_app
         // /////////////////////////////////////////////////////////////////////////////////////////////
         // for view init
         private Context mContext = null;
-        private SimpleAdapter gridAdapter;
         private GridView gridView;
-        private IList<IDictionary<string, object>> items;
 
         private static bool main_initialized = false;
 
@@ -86,12 +84,10 @@ namespace tbs_app
 
         private void Init()
         {
-            items = new List<IDictionary<string, object>>();
-
             this.gridView = FindViewById<GridView>(Resource.Id.item_grid);
 
             if (gridView == null)
-                throw new Java.Lang.IllegalArgumentException("the gridView is null");            
+                throw new Java.Lang.IllegalArgumentException("the gridView is null");
 
             this.gridView.Adapter = new CusAdapter(this);
             this.gridView.OnItemClickListener = new OnItemClickListener(this);
@@ -113,28 +109,20 @@ namespace tbs_app
             //}
 
             main_initialized = true;
-
         }
 
         internal class CusAdapter : BaseAdapter
         {
-            readonly Context context;
+            readonly Activity currentActivity;
             readonly string[] titles;
             readonly int[] iconResources;
-            List<IDictionary<string, object>> items = new List<IDictionary<string, object>>();
 
-            public CusAdapter(Context c)
+            public CusAdapter(Activity c)
             {
-                context = c;
+                currentActivity = c;
 
-
-                titles = context.Resources.GetStringArray(Resource.Array.index_titles);
+                titles = currentActivity.Resources.GetStringArray(Resource.Array.index_titles);
                 iconResources = new int[] { Resource.Drawable.tbsweb, Resource.Drawable.fullscreen, Resource.Drawable.filechooser };
-
-                for (int i = 0; i < titles.Length; i++)
-                {
-                    items.Add(new Dictionary<string, object> { { "title", titles[i] }, { "icon", iconResources[i] } });
-                }
             }
 
 
@@ -153,8 +141,13 @@ namespace tbs_app
             public override View GetView(int position, View convertView, ViewGroup parent)
             {
                 if (convertView == null)
-                    convertView = View.Inflate(context, Resource.Layout.function_block, null);
+                    convertView = View.Inflate(currentActivity, Resource.Layout.function_block, null);
 
+                ImageView iv = convertView.FindViewById<ImageView>(Resource.Id.Item_bt);
+                TextView tv = convertView.FindViewById<TextView>(Resource.Id.Item_text);
+
+                iv.SetImageResource(iconResources[position]);
+                tv.Text = titles[position];
 
                 return convertView;
             }

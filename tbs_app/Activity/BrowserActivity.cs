@@ -37,7 +37,7 @@ namespace tbs_app
         private EditText mUrl;
 
         private static readonly string mHomeUrl = "http://app.html5.qq.com/navi/index";
-        private static readonly string TAG = "SdkDemo";
+        //private static readonly string TAG = "SdkDemo";
         private static readonly int MAX_LENGTH = 14;
         private static bool mNeedTestPage = false;
 
@@ -53,6 +53,8 @@ namespace tbs_app
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            utils.LoggerManager.CurrentLogger.Debug("BrowserActivity OnCreate");
 
             currentActivity = this;
 
@@ -147,7 +149,7 @@ namespace tbs_app
             }));
         }
 
-        bool[] m_selected = new bool[] { true, true, true, true, false, false, true };
+        //bool[] m_selected = new bool[] { true, true, true, true, false, false, true };
         public override bool OnKeyDown([GeneratedEnum] Keycode keyCode, KeyEvent e)
         {
             if (keyCode == Keycode.Back)
@@ -192,8 +194,7 @@ namespace tbs_app
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
         {
-
-            TbsLog.D(TAG, "onActivityResult, requestCode:" + requestCode + ",resultCode:" + resultCode);
+            utils.LoggerManager.CurrentLogger.Debug("onActivityResult, requestCode:" + requestCode + ",resultCode:" + resultCode);
 
             if (resultCode == Android.App.Result.Ok)
             {
@@ -265,42 +266,23 @@ namespace tbs_app
 
             public override void HandleMessage(Message msg)
             {
-
                 switch (msg.What)
                 {
                     case MSG_OPEN_TEST_URL:
-                        if (!mNeedTestPage)
                         {
-                            return;
-                        }
+                            if (!mNeedTestPage)
+                            {
+                                return;
+                            }
 
-                        string testUrl = "file:///sdcard/outputHtml/html/" + mCurrentUrl + ".html";
-                        if (webview != null)
-                        {
-                            webview.LoadUrl(testUrl);
-                        }
+                            string testUrl = "file:///sdcard/outputHtml/html/" + mCurrentUrl + ".html";
+                            if (webview != null)
+                            {
+                                webview.LoadUrl(testUrl);
+                            }
 
-                        mCurrentUrl++;
-                        break;
-                    case MSG_INIT_UI:
-                        Init();
-                        break;
-                }
-                switch (msg.What)
-                {
-                    case MSG_OPEN_TEST_URL:
-                        if (!mNeedTestPage)
-                        {
-                            return;
+                            mCurrentUrl++;
                         }
-
-                        string testUrl = "file:///sdcard/outputHtml/html/" + mCurrentUrl + ".html";
-                        if (webview != null)
-                        {
-                            webview.LoadUrl(testUrl);
-                        }
-
-                        mCurrentUrl++;
                         break;
                     case MSG_INIT_UI:
                         Init();
@@ -309,7 +291,6 @@ namespace tbs_app
 
                 base.HandleMessage(msg);
             }
-
 
         }
 
@@ -491,7 +472,7 @@ namespace tbs_app
 
             public void OnDownloadStart(string p0, string p1, string p2, string p3, long p4)
             {
-                TbsLog.D(TAG, "url: " + p0);
+                utils.LoggerManager.CurrentLogger.Debug($"OnDownloadStart url:{p0}");
 
                 new AlertDialog.Builder(currentActivity)
                     .SetTitle("allow to download?")

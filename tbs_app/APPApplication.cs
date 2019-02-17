@@ -25,21 +25,19 @@ namespace tbs_app
 
             utils.LoggerManager.Configure();
 
-
-            utils.LoggerManager.CurrentLogger.Debug("Application OnCreate");
-
             AndroidEnvironment.UnhandledExceptionRaiser += AppUnhandledExceptionRaiser;
             CrashExceptionHandler.Instance.Init(this);
 
             QbSdk.IPreInitCallback cb = new CusPreInitCallback();
             //x5内核初始化接口
             QbSdk.InitX5Environment(ApplicationContext, cb);
-
+            QbSdk.SetTbsListener(new TbsListener());
         }
 
 
         private void AppUnhandledExceptionRaiser(object sender, RaiseThrowableEventArgs e)
         {
+            utils.LoggerManager.CurrentLogger.Error(e.Exception, "UncaughtException");
 
             System.Threading.Tasks.Task.Run(() =>
             {
@@ -75,12 +73,13 @@ namespace tbs_app
         public void OnViewInitFinished(bool arg0)
         {
             // TODO Auto-generated method stub
-            //x5內核初始化完成的回调，为true表示x5内核加载成功，否则表示x5内核加载失败，会自动切换到系统内核。
-            Android.Util.Log.Debug("app", " onViewInitFinished is " + arg0);
+            //x5內核初始化完成的回调，为true表示x5内核加载成功，否则表示x5内核加载失败，会自动切换到系统内核
+
+            utils.LoggerManager.CurrentLogger.Debug("ViewInitFinished is x5内核是否加载成功? " + arg0);
         }
     }
 
-    public class CrashExceptionHandler : Java.Lang.Object, Java.Lang.Thread.IUncaughtExceptionHandler
+    internal class CrashExceptionHandler : Java.Lang.Object, Java.Lang.Thread.IUncaughtExceptionHandler
     {
         //系统默认的UncaughtException处理类 
         private Java.Lang.Thread.IUncaughtExceptionHandler mDefaultHandler;
@@ -96,6 +95,7 @@ namespace tbs_app
 
         public void UncaughtException(Java.Lang.Thread t, Java.Lang.Throwable e)
         {
+            utils.LoggerManager.CurrentLogger.Error("UncaughtException", e);
             if (!HandleException(e) && mDefaultHandler != null)
             {
                 mDefaultHandler.UncaughtException(t, e);
@@ -136,6 +136,24 @@ namespace tbs_app
             mDefaultHandler = Java.Lang.Thread.DefaultUncaughtExceptionHandler;
 
             Java.Lang.Thread.DefaultUncaughtExceptionHandler = this;
+        }
+    }
+
+    internal class TbsListener : Java.Lang.Object, ITbsListener
+    {
+        public void OnDownloadFinish(int p0)
+        {
+            utils.LoggerManager.CurrentLogger.Debug($"TbsListener OnDownloadFinish args:{p0}");
+        }
+
+        public void OnDownloadProgress(int p0)
+        {
+            utils.LoggerManager.CurrentLogger.Debug($"TbsListener OnDownloadProgress args:{p0}");
+        }
+
+        public void OnInstallFinish(int p0)
+        {
+            utils.LoggerManager.CurrentLogger.Debug($"TbsListener OnInstallFinish args:{p0}");
         }
     }
 

@@ -20,10 +20,16 @@ namespace tbs_app.utils
         {
             var config = new NLog.Config.LoggingConfiguration();
 
-            var logfile = new NLog.Targets.FileTarget("logfile") { FileName = "file.txt" };
+            var fileName = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/tbs/logs/log.txt";
+            var logfile = new NLog.Targets.FileTarget("logfile")
+            {
+                FileName = fileName,
+                FileNameKind = NLog.Targets.FilePathKind.Absolute,
+                Layout = NLog.Layouts.Layout.FromString("${longdate}|${level:uppercase=true}|${logger}|${message}|${exception:format=StackTrace}")
+            };
             var logconsole = new NLog.Targets.ConsoleTarget("logconsole");
 
-            config.AddRule(LogLevel.Info, LogLevel.Fatal, logconsole);
+            config.AddRule(LogLevel.Debug, LogLevel.Fatal, logconsole);
             config.AddRule(LogLevel.Debug, LogLevel.Fatal, logfile);
 
             NLog.LogManager.Configuration = config;

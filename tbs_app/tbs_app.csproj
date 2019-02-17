@@ -69,9 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidNativeLibrary Include="jniLibs\armeabi\liblbs.so" />
-    <None Include="NLog.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />

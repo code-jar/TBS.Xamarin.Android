@@ -17,11 +17,13 @@ namespace tbs_app
     [Activity(Label = "FullScreenActivity")]
     public class FullScreenActivity : Activity
     {
-        private static X5WebView webView;
+        private X5WebView webView;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            utils.LoggerManager.CurrentLogger.Debug("FullScreenActivity OnCreate");
 
             SetContentView(Resource.Layout.filechooser_layout);
             webView = FindViewById<X5WebView>(Resource.Id.web_filechooser);
@@ -30,7 +32,7 @@ namespace tbs_app
             Window.SetFormat(Android.Graphics.Format.Translucent);
 
             webView.View.OverScrollMode = OverScrollMode.Always;
-            webView.AddJavascriptInterface(new CusWebViewJavaScriptFunction(this), "Android");
+            webView.AddJavascriptInterface(new CusWebViewJavaScriptFunction(this, webView), "Android");
         }
 
         protected override void OnDestroy()
@@ -70,10 +72,12 @@ namespace tbs_app
         internal class CusWebViewJavaScriptFunction : Java.Lang.Object, IWebViewJavaScriptFunction
         {
             private readonly Activity currentActivity;
+            private readonly X5WebView webView;
 
-            internal CusWebViewJavaScriptFunction(Activity activity)
+            internal CusWebViewJavaScriptFunction(Activity activity, X5WebView view)
             {
                 currentActivity = activity;
+                webView = view;
             }
 
 
@@ -84,25 +88,25 @@ namespace tbs_app
 
 
             [Android.Webkit.JavascriptInterface]
-            public void onX5ButtonClicked()
+            public void OnX5ButtonClicked()
             {
                 EnableX5FullscreenFunc();
             }
 
             [Android.Webkit.JavascriptInterface]
-            public void onCustomButtonClicked()
+            public void OnCustomButtonClicked()
             {
                 DisableX5FullscreenFunc();
             }
 
             [Android.Webkit.JavascriptInterface]
-            public void onLiteWndButtonClicked()
+            public void OnLiteWndButtonClicked()
             {
                 EnableLiteWndFunc();
             }
 
             [Android.Webkit.JavascriptInterface]
-            public void onPageVideoClicked()
+            public void OnPageVideoClicked()
             {
                 EnablePageVideoFunc();
             }
