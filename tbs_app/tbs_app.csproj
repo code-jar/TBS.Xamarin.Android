@@ -64,10 +64,14 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="utils\IWebViewJavaScriptFunction.cs" />
+    <Compile Include="utils\Logger.cs" />
     <Compile Include="utils\X5WebView.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidNativeLibrary Include="jniLibs\armeabi\liblbs.so" />
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
@@ -100,6 +104,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NLog">
+      <Version>4.5.11</Version>
+    </PackageReference>
+    <PackageReference Include="NLog.Config">
       <Version>4.5.11</Version>
     </PackageReference>
     <PackageReference Include="tbs_sdk_withfilereader">

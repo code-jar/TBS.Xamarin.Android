@@ -23,6 +23,11 @@ namespace tbs_app
         {
             base.OnCreate();
 
+            utils.LoggerManager.Configure();
+
+
+            utils.LoggerManager.CurrentLogger.Debug("Application OnCreate");
+
             AndroidEnvironment.UnhandledExceptionRaiser += AppUnhandledExceptionRaiser;
             CrashExceptionHandler.Instance.Init(this);
 
