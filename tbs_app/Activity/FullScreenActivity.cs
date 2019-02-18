@@ -14,7 +14,7 @@ using tbs_app.utils;
 
 namespace tbs_app
 {
-    [Activity(Label = "FullScreenActivity")]
+    [Activity(Label = "FullScreenActivity", ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize | Android.Content.PM.ConfigChanges.KeyboardHidden)]
     public class FullScreenActivity : Activity
     {
         private X5WebView webView;

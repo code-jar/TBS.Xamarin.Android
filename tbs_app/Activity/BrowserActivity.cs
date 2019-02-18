@@ -18,25 +18,25 @@ using tbs_app.utils;
 
 namespace tbs_app
 {
-    [Activity(Label = "BrowserActivity")]
+    [Activity(Label = "BrowserActivity", ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize | Android.Content.PM.ConfigChanges.KeyboardHidden)]
     public class BrowserActivity : Activity
     {
-        private static Activity currentActivity;
+        private Activity currentActivity;
 
         /**
 	 * 作为一个浏览器的示例展示出来，采用android+web的模式
 	 */
-        private static X5WebView mWebView;
-        private static ViewGroup mViewParent;
-        private static ImageButton mBack;
-        private static ImageButton mForward;
-        private static ImageButton mExit;
-        private static ImageButton mHome;
+        private X5WebView mWebView;
+        private ViewGroup mViewParent;
+        private ImageButton mBack;
+        private ImageButton mForward;
+        private ImageButton mExit;
+        private ImageButton mHome;
         private ImageButton mMore;
         private Button mGo;
         private EditText mUrl;
 
-        private static readonly string mHomeUrl = "http://app.html5.qq.com/navi/index";
+        private const string mHomeUrl = "http://app.html5.qq.com/navi/index";
         //private static readonly string TAG = "SdkDemo";
         private static readonly int MAX_LENGTH = 14;
         private static bool mNeedTestPage = false;
@@ -44,7 +44,7 @@ namespace tbs_app
         private static readonly int disable = 120;
         private static readonly int enable = 255;
 
-        private static ProgressBar mPageLoadingProgressBar = null;
+        //private static ProgressBar mPageLoadingProgressBar = null;
 
         private IValueCallback uploadFile;
 
@@ -57,14 +57,13 @@ namespace tbs_app
             utils.LoggerManager.CurrentLogger.Debug("BrowserActivity OnCreate");
 
             currentActivity = this;
+            //mTestHandler = new CusHandler(currentActivity);
 
             Window.SetFormat(Android.Graphics.Format.Translucent);
 
-            Intent intent = Intent;
-
-            if (intent != null && intent.Data != null)
+            if (Intent != null && Intent.Data != null)
             {
-                mIntentUrl = new Java.Net.URL(intent.Data.ToString());
+                mIntentUrl = new Java.Net.URL(Intent.Data.ToString());
             }
 
 
@@ -84,10 +83,12 @@ namespace tbs_app
             //android.view.WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
             SetContentView(Resource.Layout.activity_main);
-            mViewParent = FindViewById<ViewGroup>(Resource.Id.webView1);
+            //mViewParent = FindViewById<ViewGroup>(Resource.Id.webView1);
 
             InitBtnListenser();
 
+            //mTestHandler.SendEmptyMessageDelayed(MSG_INIT_UI, 10);
+            mTestHandler = new Android.OS.Handler(callback => { Init(); });
             mTestHandler.SendEmptyMessageDelayed(MSG_INIT_UI, 10);
 
         }
@@ -103,9 +104,12 @@ namespace tbs_app
             mMore = FindViewById<ImageButton>(Resource.Id.btnMore);
             if (int.Parse(Android.OS.Build.VERSION.Sdk) >= 16)
             {
-                mBack.SetAlpha(disable);
-                mForward.SetAlpha(disable);
-                mHome.SetAlpha(disable);
+                //mBack.SetAlpha(disable);
+                //mForward.SetAlpha(disable);
+                //mHome.SetAlpha(disable);
+                mBack.Alpha = disable;
+                mForward.Alpha = disable;
+                mHome.Alpha = disable;
             }
             mHome.Enabled = false;
 
@@ -133,7 +137,7 @@ namespace tbs_app
                 Toast.MakeText(this, "not completed", ToastLength.Long).Show();
             }));
 
-            mUrl.OnFocusChangeListener = new CusOnFocusChangeListener(this, mUrl, mGo);
+            mUrl.OnFocusChangeListener = new CusOnFocusChangeListener(this, mWebView, mUrl, mGo);
 
             mUrl.AddTextChangedListener(new CusTextChangedListener(mUrl, mGo));
 
@@ -170,24 +174,24 @@ namespace tbs_app
             return base.OnKeyDown(keyCode, e);
         }
 
-        private static void ChangGoForwardButton(WebView view)
+        private void ChangGoForwardButton(WebView view)
         {
             if (view.CanGoBack())
-                mBack.SetAlpha(enable);
+                mBack.Alpha = enable;
             else
-                mBack.SetAlpha(disable);
+                mBack.Alpha = disable;
             if (view.CanGoForward())
-                mForward.SetAlpha(enable);
+                mForward.Alpha = enable;
             else
-                mForward.SetAlpha(disable);
+                mForward.Alpha = disable;
             if (view.Url != null && view.Url.Equals(mHomeUrl, StringComparison.CurrentCultureIgnoreCase))
             {
-                mHome.SetAlpha(disable);
+                mHome.Alpha = disable;
                 mHome.Enabled = false;
             }
             else
             {
-                mHome.SetAlpha(enable);
+                mHome.Alpha = enable;
                 mHome.Enabled = true;
             }
         }
@@ -252,16 +256,16 @@ namespace tbs_app
         public const int MSG_INIT_UI = 1;
         private const int mUrlStartNum = 0;
         private static int mCurrentUrl = mUrlStartNum;
-        private static Handler mTestHandler = new CusHandler(mWebView);
+        private Handler mTestHandler = null;
 
         internal class CusHandler : Handler
         {
+            private readonly Activity currentActivity;
+            private X5WebView webview;
 
-            private readonly X5WebView webview;
-
-            internal CusHandler(X5WebView view)
+            internal CusHandler(Activity current)
             {
-                webview = view;
+                currentActivity = current;
             }
 
             public override void HandleMessage(Message msg)
@@ -285,24 +289,51 @@ namespace tbs_app
                         }
                         break;
                     case MSG_INIT_UI:
-                        Init();
+                        //Init();
                         break;
                 }
 
                 base.HandleMessage(msg);
             }
 
+
         }
 
-        private static void Init()
-        {
-            mWebView = new X5WebView(currentActivity, null);
 
+
+        private void Init()
+        {
+            mWebView = new X5WebView(this, null);
+
+            var mViewParent = currentActivity.FindViewById<ViewGroup>(Resource.Id.webView1);
             mViewParent.AddView(mWebView, new FrameLayout.LayoutParams(FrameLayout.LayoutParams.FillParent, FrameLayout.LayoutParams.FillParent));
 
             InitProgressBar();
 
-            mWebView.SetWebViewClient(new CusWebViewClient());
+            mWebView.SetWebViewClient(new CusWebViewClient((view, args) =>
+            {
+
+                mTestHandler = new Android.OS.Handler(callback =>
+                {
+                    if (!mNeedTestPage)
+                    {
+                        return;
+                    }
+
+                    string testUrl = "file:///sdcard/outputHtml/html/" + mCurrentUrl + ".html";
+                    if (mWebView != null)
+                    {
+                        mWebView.LoadUrl(testUrl);
+                    }
+                    mCurrentUrl++;
+
+                });
+                mTestHandler.SendEmptyMessageDelayed(MSG_OPEN_TEST_URL, 5000);
+
+                if (int.Parse(Android.OS.Build.VERSION.Sdk) >= 16)
+                    ChangGoForwardButton(view);
+
+            }));
             mWebView.SetWebChromeClient(new CusWebChromeClient(currentActivity));
             mWebView.SetDownloadListener(new CusDownloadListener(currentActivity));
 
@@ -339,22 +370,25 @@ namespace tbs_app
                 mWebView.LoadUrl(mIntentUrl.ToString());
             }
             watch.Stop();
-            TbsLog.D("time-cost", "cost time: " + watch.ElapsedMilliseconds);
+            //TbsLog.D("time-cost", "cost time: " + watch.ElapsedMilliseconds);
+            utils.LoggerManager.CurrentLogger.Debug($"time-cost:{watch.ElapsedMilliseconds}");
             CookieSyncManager.CreateInstance(currentActivity);
             CookieSyncManager.Instance.Sync();
 
         }
 
-        private static void InitProgressBar()
+        private void InitProgressBar()
         {
-            mPageLoadingProgressBar = currentActivity.FindViewById<ProgressBar>(Resource.Id.progressBar1);
+            var progressBar = currentActivity.FindViewById<ProgressBar>(Resource.Id.progressBar1);
             // new
             // ProgressBar(getApplicationContext(),
             // null,
             // android.R.attr.progressBarStyleHorizontal);
-            mPageLoadingProgressBar.Max = 100;
-            mPageLoadingProgressBar.ProgressDrawable = currentActivity.Resources.GetDrawable(Resource.Drawable.color_progressbar);
+            progressBar.Max = 100;
+            progressBar.ProgressDrawable = currentActivity.GetDrawable(Resource.Drawable.color_progressbar);
         }
+
+
 
         internal class CusOnClickListener : Java.Lang.Object, View.IOnClickListener
         {
@@ -413,13 +447,15 @@ namespace tbs_app
 
         internal class CusOnFocusChangeListener : Java.Lang.Object, View.IOnFocusChangeListener
         {
+            private readonly Android.Content.Context ctx;
+            private readonly X5WebView _webView;
             private readonly EditText mUrl;
             private readonly Button mGo;
-            private readonly Android.Content.Context ctx;
 
-            internal CusOnFocusChangeListener(Context ctx, EditText mUrl, Button mGo)
+            internal CusOnFocusChangeListener(Context ctx, X5WebView webView, EditText mUrl, Button mGo)
             {
                 this.ctx = ctx;
+                this._webView = webView;
                 this.mUrl = mUrl;
                 this.mGo = mGo;
             }
@@ -429,10 +465,10 @@ namespace tbs_app
                 if (hasFocus)
                 {
                     mGo.Visibility = ViewStates.Visible;
-                    if (null == mWebView.Url)
+                    if (null == _webView.Url)
                         return;
 
-                    if (mWebView.Url.Equals(mHomeUrl, StringComparison.CurrentCultureIgnoreCase))
+                    if (_webView.Url.Equals(mHomeUrl, StringComparison.CurrentCultureIgnoreCase))
                     {
                         mUrl.Text = "";
                         mGo.Text = "首页";
@@ -440,7 +476,7 @@ namespace tbs_app
                     }
                     else
                     {
-                        mUrl.Text = mWebView.Url;
+                        mUrl.Text = _webView.Url;
                         mGo.Text = "进入";
                         mGo.SetTextColor(new Android.Graphics.Color(0X6F0000CD));
                     }
@@ -448,7 +484,7 @@ namespace tbs_app
                 else
                 {
                     mGo.Visibility = ViewStates.Gone;
-                    string title = mWebView.Title;
+                    string title = _webView.Title;
                     if (title != null && title.Length > MAX_LENGTH)
                         mUrl.Text = title.Substring(0, MAX_LENGTH) + "...";
                     else
@@ -526,13 +562,10 @@ namespace tbs_app
 
         internal class CusWebChromeClient : WebChromeClient
         {
-            private Activity currentActivity;
+            private readonly Activity currentActivity;
             private View myVideoView;
             private View myNormalView;
             private IX5WebChromeClientCustomViewCallback callback;
-
-
-            private readonly Activity ctx;
 
             internal CusWebChromeClient(Activity activity)
             {
@@ -544,7 +577,6 @@ namespace tbs_app
             {
                 return base.OnJsConfirm(p0, p1, p2, p3);
             }
-
 
             // 全屏播放配置
             public override void OnShowCustomView(View view, IX5WebChromeClientCustomViewCallback customViewCallback)
@@ -577,12 +609,20 @@ namespace tbs_app
             {
                 // 这里写入你自定义的window alert
 
+                Toast.MakeText(currentActivity, $"OnJsAlert p1{p1} p2:{p2}", ToastLength.Short).Show();
+
                 return base.OnJsAlert(p0, p1, p2, p3);
             }
         }
 
         internal class CusWebViewClient : WebViewClient
         {
+            private readonly Action<WebView, string> _onPageFinishedAction;
+            internal CusWebViewClient(Action<WebView, string> onPageFinished)
+            {
+                _onPageFinishedAction = onPageFinished;
+            }
+
             public override bool ShouldOverrideUrlLoading(WebView p0, string p1)
             {
                 return false;
@@ -592,11 +632,15 @@ namespace tbs_app
             {
                 base.OnPageFinished(view, p1);
 
-                // mTestHandler.sendEmptyMessage(MSG_OPEN_TEST_URL);
-                mTestHandler.SendEmptyMessageDelayed(MSG_OPEN_TEST_URL, 5000);// 5s?
-                if (int.Parse(Android.OS.Build.VERSION.Sdk) >= 16)
-                    ChangGoForwardButton(view);
-                /* mWebView.showLog("test Log"); */
+                _onPageFinishedAction?.Invoke(view, p1);
+
+
+                //// mTestHandler.sendEmptyMessage(MSG_OPEN_TEST_URL);
+                //mTestHandler.sendEmptyMessageDelayed(MSG_OPEN_TEST_URL, 5000);// 5s?
+                //if (Integer.parseInt(android.os.Build.VERSION.SDK) >= 16)
+                //    changGoForwardButton(view);
+                ///* mWebView.showLog("test Log"); */
+
             }
         }
     }

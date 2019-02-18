@@ -14,7 +14,7 @@ using tbs_app.utils;
 
 namespace tbs_app
 {
-    [Activity(Label = "FilechooserActivity")]
+    [Activity(Label = "FilechooserActivity", ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize | Android.Content.PM.ConfigChanges.KeyboardHidden)]
     public class FilechooserActivity : Activity
     {
 
