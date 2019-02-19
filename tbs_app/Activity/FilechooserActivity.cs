@@ -31,11 +31,12 @@ namespace tbs_app
             webView = FindViewById<X5WebView>(Resource.Id.web_filechooser);
             webView.SetWebChromeClient(new CusWebChromeClient
             {
-                OnOpenFileChooser = (arg0, arg1, agr2) =>
+                OnOpenFileChooser = (arg0, arg1, arg2) =>
                 {
                     Android.Util.Log.Info("test", "openFileChooser 1");
+                    utils.LoggerManager.CurrentLogger.Debug($"OnOpenFileChooser arg1:{arg1},arg2:{arg2}");
                     // TODO 不知道啥玩意
-                    //uploadFile = uploadFile;
+                    uploadFile = arg0;
                     OpenFileChooseProcess();
                 }
             });
@@ -50,7 +51,7 @@ namespace tbs_app
             Intent i = new Intent(Intent.ActionGetContent);
             i.AddCategory(Intent.CategoryOpenable);
             i.SetType("*/*");
-            StartActivityForResult(Intent.CreateChooser(i, "test"), 0);
+            StartActivityForResult(Intent.CreateChooser(i, "选择文件"), 0);
         }
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)

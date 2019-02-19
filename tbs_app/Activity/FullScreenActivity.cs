@@ -33,8 +33,7 @@ namespace tbs_app
 
             webView.View.OverScrollMode = OverScrollMode.Always;
 
-            IWebViewJavaScriptFunction iview = new CusWebViewJavaScriptFunction(this, webView);
-            webView.AddJavascriptInterface((Java.Lang.Object)iview, "Android");
+            webView.AddJavascriptInterface(new CusWebViewJavaScriptFunction(this, webView), "Android");
         }
 
         protected override void OnDestroy()
@@ -88,25 +87,28 @@ namespace tbs_app
                 // TODO Auto-generated method stub
             }
 
-
+            [Java.Interop.Export("OnX5ButtonClicked")]
             [Android.Webkit.JavascriptInterface]
             public void OnX5ButtonClicked()
             {
                 EnableX5FullscreenFunc();
             }
 
+            [Java.Interop.Export("OnCustomButtonClicked")]
             [Android.Webkit.JavascriptInterface]
             public void OnCustomButtonClicked()
             {
                 DisableX5FullscreenFunc();
             }
 
+            [Java.Interop.Export("OnLiteWndButtonClicked")]
             [Android.Webkit.JavascriptInterface]
             public void OnLiteWndButtonClicked()
             {
                 EnableLiteWndFunc();
             }
 
+            [Java.Interop.Export("OnPageVideoClicked")]
             [Android.Webkit.JavascriptInterface]
             public void OnPageVideoClicked()
             {
