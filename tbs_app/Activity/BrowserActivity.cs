@@ -104,12 +104,9 @@ namespace tbs_app
             mMore = FindViewById<ImageButton>(Resource.Id.btnMore);
             if (int.Parse(Android.OS.Build.VERSION.Sdk) >= 16)
             {
-                //mBack.SetAlpha(disable);
-                //mForward.SetAlpha(disable);
-                //mHome.SetAlpha(disable);
-                mBack.Alpha = disable;
-                mForward.Alpha = disable;
-                mHome.Alpha = disable;
+                mBack.SetAlpha(disable);
+                mForward.SetAlpha(disable);
+                mHome.SetAlpha(disable);
             }
             mHome.Enabled = false;
 
@@ -137,7 +134,42 @@ namespace tbs_app
                 Toast.MakeText(this, "not completed", ToastLength.Long).Show();
             }));
 
-            mUrl.OnFocusChangeListener = new CusOnFocusChangeListener(this, mWebView, mUrl, mGo);
+            mUrl.OnFocusChangeListener = new CusOnFocusChangeListener((view, hasFocus) =>
+            {
+
+                if (hasFocus)
+                {
+                    mGo.Visibility = ViewStates.Visible;
+                    if (null == mWebView.Url)
+                        return;
+
+                    if (mWebView.Url.Equals(mHomeUrl, StringComparison.CurrentCultureIgnoreCase))
+                    {
+                        mUrl.Text = "";
+                        mGo.Text = "首页";
+                        mGo.SetTextColor(new Android.Graphics.Color(0X6F0F0F0F));
+                    }
+                    else
+                    {
+                        mUrl.Text = mWebView.Url;
+                        mGo.Text = "进入";
+                        mGo.SetTextColor(new Android.Graphics.Color(0X6F0000CD));
+                    }
+                }
+                else
+                {
+                    mGo.Visibility = ViewStates.Gone;
+                    string title = mWebView.Title;
+                    if (title != null && title.Length > MAX_LENGTH)
+                        mUrl.Text = title.Substring(0, MAX_LENGTH) + "...";
+                    else
+                        mUrl.Text = title;
+
+
+                    var imm = this.GetSystemService(Context.InputMethodService) as Android.Views.InputMethods.InputMethodManager;
+                    imm.HideSoftInputFromWindow(view.WindowToken, 0);
+                }
+            });
 
             mUrl.AddTextChangedListener(new CusTextChangedListener(mUrl, mGo));
 
@@ -177,21 +209,21 @@ namespace tbs_app
         private void ChangGoForwardButton(WebView view)
         {
             if (view.CanGoBack())
-                mBack.Alpha = enable;
+                mBack.SetAlpha(enable);
             else
-                mBack.Alpha = disable;
+                mBack.SetAlpha(disable);
             if (view.CanGoForward())
-                mForward.Alpha = enable;
+                mForward.SetAlpha(enable);
             else
-                mForward.Alpha = disable;
+                mForward.SetAlpha(disable);
             if (view.Url != null && view.Url.Equals(mHomeUrl, StringComparison.CurrentCultureIgnoreCase))
             {
-                mHome.Alpha = disable;
+                mHome.SetAlpha(disable);
                 mHome.Enabled = false;
             }
             else
             {
-                mHome.Alpha = enable;
+                mHome.SetAlpha(enable);
                 mHome.Enabled = true;
             }
         }
@@ -257,48 +289,6 @@ namespace tbs_app
         private const int mUrlStartNum = 0;
         private static int mCurrentUrl = mUrlStartNum;
         private Handler mTestHandler = null;
-
-        internal class CusHandler : Handler
-        {
-            private readonly Activity currentActivity;
-            private X5WebView webview;
-
-            internal CusHandler(Activity current)
-            {
-                currentActivity = current;
-            }
-
-            public override void HandleMessage(Message msg)
-            {
-                switch (msg.What)
-                {
-                    case MSG_OPEN_TEST_URL:
-                        {
-                            if (!mNeedTestPage)
-                            {
-                                return;
-                            }
-
-                            string testUrl = "file:///sdcard/outputHtml/html/" + mCurrentUrl + ".html";
-                            if (webview != null)
-                            {
-                                webview.LoadUrl(testUrl);
-                            }
-
-                            mCurrentUrl++;
-                        }
-                        break;
-                    case MSG_INIT_UI:
-                        //Init();
-                        break;
-                }
-
-                base.HandleMessage(msg);
-            }
-
-
-        }
-
 
 
         private void Init()
@@ -452,16 +442,18 @@ namespace tbs_app
             private readonly EditText mUrl;
             private readonly Button mGo;
 
-            internal CusOnFocusChangeListener(Context ctx, X5WebView webView, EditText mUrl, Button mGo)
+            private readonly Action<View, bool> _onFocusChange;
+
+            internal CusOnFocusChangeListener(Action<View, bool> onFocusChange)
             {
-                this.ctx = ctx;
-                this._webView = webView;
-                this.mUrl = mUrl;
-                this.mGo = mGo;
+                _onFocusChange = onFocusChange;
             }
 
             public void OnFocusChange(View v, bool hasFocus)
             {
+                _onFocusChange?.Invoke(v, hasFocus);
+
+
                 if (hasFocus)
                 {
                     mGo.Visibility = ViewStates.Visible;
