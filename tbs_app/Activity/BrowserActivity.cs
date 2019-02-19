@@ -437,11 +437,6 @@ namespace tbs_app
 
         internal class CusOnFocusChangeListener : Java.Lang.Object, View.IOnFocusChangeListener
         {
-            private readonly Android.Content.Context ctx;
-            private readonly X5WebView _webView;
-            private readonly EditText mUrl;
-            private readonly Button mGo;
-
             private readonly Action<View, bool> _onFocusChange;
 
             internal CusOnFocusChangeListener(Action<View, bool> onFocusChange)
@@ -452,40 +447,6 @@ namespace tbs_app
             public void OnFocusChange(View v, bool hasFocus)
             {
                 _onFocusChange?.Invoke(v, hasFocus);
-
-
-                if (hasFocus)
-                {
-                    mGo.Visibility = ViewStates.Visible;
-                    if (null == _webView.Url)
-                        return;
-
-                    if (_webView.Url.Equals(mHomeUrl, StringComparison.CurrentCultureIgnoreCase))
-                    {
-                        mUrl.Text = "";
-                        mGo.Text = "首页";
-                        mGo.SetTextColor(new Android.Graphics.Color(0X6F0F0F0F));
-                    }
-                    else
-                    {
-                        mUrl.Text = _webView.Url;
-                        mGo.Text = "进入";
-                        mGo.SetTextColor(new Android.Graphics.Color(0X6F0000CD));
-                    }
-                }
-                else
-                {
-                    mGo.Visibility = ViewStates.Gone;
-                    string title = _webView.Title;
-                    if (title != null && title.Length > MAX_LENGTH)
-                        mUrl.Text = title.Substring(0, MAX_LENGTH) + "...";
-                    else
-                        mUrl.Text = title;
-
-
-                    var imm = ctx.GetSystemService(Context.InputMethodService) as Android.Views.InputMethods.InputMethodManager;
-                    imm.HideSoftInputFromWindow(v.WindowToken, 0);
-                }
             }
         }
 

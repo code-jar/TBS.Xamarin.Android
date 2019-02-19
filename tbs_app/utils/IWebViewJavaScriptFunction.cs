@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace tbs_app.utils
 {
-    public interface IWebViewJavaScriptFunction
+    public interface IWebViewJavaScriptFunction : IJavaObject
     {
         void OnJsFunctionCalled(string tag);
     }

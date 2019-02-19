@@ -32,7 +32,9 @@ namespace tbs_app
             Window.SetFormat(Android.Graphics.Format.Translucent);
 
             webView.View.OverScrollMode = OverScrollMode.Always;
-            webView.AddJavascriptInterface(new CusWebViewJavaScriptFunction(this, webView), "Android");
+
+            IWebViewJavaScriptFunction iview = new CusWebViewJavaScriptFunction(this, webView);
+            webView.AddJavascriptInterface((Java.Lang.Object)iview, "Android");
         }
 
         protected override void OnDestroy()
@@ -69,12 +71,12 @@ namespace tbs_app
         }
 
 
-        internal class CusWebViewJavaScriptFunction : Java.Lang.Object, IWebViewJavaScriptFunction
+        public class CusWebViewJavaScriptFunction : Java.Lang.Object, IWebViewJavaScriptFunction
         {
             private readonly Activity currentActivity;
             private readonly X5WebView webView;
 
-            internal CusWebViewJavaScriptFunction(Activity activity, X5WebView view)
+            public CusWebViewJavaScriptFunction(Activity activity, X5WebView view)
             {
                 currentActivity = activity;
                 webView = view;
