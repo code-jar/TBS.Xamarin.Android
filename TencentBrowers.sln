@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tbs_sdk_withfilereader", "t
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tbs_app", "tbs_app\tbs_app.csproj", "{5B6D93BF-4965-4CC9-9915-63AAEDDE18D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tbs_sdk", "tbs_sdk\tbs_sdk.csproj", "{AF693C6E-C157-43F6-BCB4-A7F79CA33B21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tbs_sdk_ios", "tbs_sdk_ios\tbs_sdk_ios.csproj", "{0DBD983F-BD8F-4BD6-B08A-AD28457D35EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,14 @@ Global
 		{5B6D93BF-4965-4CC9-9915-63AAEDDE18D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B6D93BF-4965-4CC9-9915-63AAEDDE18D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B6D93BF-4965-4CC9-9915-63AAEDDE18D0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AF693C6E-C157-43F6-BCB4-A7F79CA33B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF693C6E-C157-43F6-BCB4-A7F79CA33B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF693C6E-C157-43F6-BCB4-A7F79CA33B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF693C6E-C157-43F6-BCB4-A7F79CA33B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBD983F-BD8F-4BD6-B08A-AD28457D35EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBD983F-BD8F-4BD6-B08A-AD28457D35EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBD983F-BD8F-4BD6-B08A-AD28457D35EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBD983F-BD8F-4BD6-B08A-AD28457D35EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
