@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using AVFoundation;
 using CloudKit;
 using CoreAnimation;
@@ -23,10 +23,8 @@ using WebKit;
 namespace TBS
 {
 
-
-
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern _RuneLocale _DefaultRuneLocale;
@@ -39,7 +37,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern int signgam;
@@ -48,7 +46,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const char *const [32] sys_signame;
@@ -61,7 +59,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern FILE * __stdinp;
@@ -86,7 +84,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern int __mb_cur_max;
@@ -99,7 +97,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern char *[] tzname;
@@ -120,7 +118,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern void *[32] _NSConcreteGlobalBlock __attribute__((availability(ios, introduced=3.2)));
@@ -135,7 +133,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern double kCFCoreFoundationVersionNumber;
@@ -144,7 +142,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFNullRef kCFNull;
@@ -177,7 +175,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFArrayCallBacks kCFTypeArrayCallBacks;
@@ -186,7 +184,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFBagCallBacks kCFTypeBagCallBacks;
@@ -199,7 +197,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFBinaryHeapCallBacks kCFStringBinaryHeapCallBacks;
@@ -208,7 +206,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFDictionaryKeyCallBacks kCFTypeDictionaryKeyCallBacks;
@@ -221,7 +219,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFDictionaryValueCallBacks kCFTypeDictionaryValueCallBacks;
@@ -230,7 +228,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFNotificationName kCFLocaleCurrentLocaleDidChangeNotification __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -391,7 +389,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef kCFStringTransformStripCombiningMarks;
@@ -461,7 +459,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFNotificationName kCFTimeZoneSystemTimeZoneDidChangeNotification __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -471,7 +469,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFDateFormatterKey kCFDateFormatterIsLenient;
@@ -675,7 +673,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFNumberRef kCFNumberPositiveInfinity;
@@ -692,7 +690,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFNumberFormatterKey kCFNumberFormatterCurrencyCode;
@@ -854,7 +852,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCFPreferencesAnyApplication;
@@ -883,7 +881,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef kCFURLKeysOfUnsetValuesKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=5.0))) __attribute__((availability(macos, introduced=10.7)));
@@ -1520,7 +1518,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFRunLoopMode kCFRunLoopDefaultMode;
@@ -1533,7 +1531,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef kCFSocketCommandKey;
@@ -1569,7 +1567,7 @@ namespace TBS
     delegate void os_block_t();
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern char * optarg;
@@ -1619,7 +1617,7 @@ namespace TBS
         // @required -(Class)class;
         [Abstract]
         [Export("class")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         Class Class { get; }
 
         // @required -(instancetype)self;
@@ -1645,7 +1643,7 @@ namespace TBS
         // @required -(BOOL)isProxy;
         [Abstract]
         [Export("isProxy")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool IsProxy { get; }
 
         // @required -(BOOL)isKindOfClass:(Class)aClass;
@@ -1686,13 +1684,13 @@ namespace TBS
         // @required -(NSUInteger)retainCount;
         [Abstract]
         [Export("retainCount")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         nuint RetainCount { get; }
 
         // @required -(struct _NSZone *)zone;
         [Abstract]
         [Export("zone")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         unsafe _NSZone* Zone { get; }
 
         // @required @property (readonly, copy) NSString * description;
@@ -1745,12 +1743,12 @@ namespace TBS
 
         // -(id)copy;
         [Export("copy")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject Copy { get; }
 
         // -(id)mutableCopy;
         [Export("mutableCopy")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject MutableCopy { get; }
 
         // +(id)copyWithZone:(struct _NSZone *)zone;
@@ -1824,31 +1822,31 @@ namespace TBS
         // +(NSUInteger)hash;
         [Static]
         [Export("hash")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         nuint Hash { get; }
 
         // +(Class)superclass;
         [Static]
         [Export("superclass")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         Class Superclass { get; }
 
         // +(Class)class;
         [Static]
         [Export("class")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         Class Class { get; }
 
         // +(NSString *)description;
         [Static]
         [Export("description")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         string Description { get; }
 
         // +(NSString *)debugDescription;
         [Static]
         [Export("debugDescription")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         string DebugDescription { get; }
     }
 
@@ -1893,7 +1891,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern struct dispatch_queue_s _dispatch_main_q __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -1909,7 +1907,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern struct dispatch_queue_attr_s _dispatch_queue_attr_concurrent __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=4.3))) __attribute__((availability(macos, introduced=10.7)));
@@ -1919,7 +1917,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern security_token_t KERNEL_SECURITY_TOKEN;
@@ -1938,7 +1936,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const struct dispatch_source_type_s _dispatch_source_type_data_add __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -2021,7 +2019,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern struct dispatch_data_s _dispatch_data_empty __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=5.0))) __attribute__((availability(macos, introduced=10.7)));
@@ -2053,7 +2051,7 @@ namespace TBS
     delegate void dispatch_io_handler_t(bool arg0, [NullAllowed] OS_dispatch_data arg1, int arg2);
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern CFStreamPropertyKey  _Null_unspecified const kCFStreamPropertyDataWritten;
@@ -2169,7 +2167,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFSetCallBacks kCFTypeSetCallBacks;
@@ -2182,7 +2180,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef kCFURLFileExists __attribute__((availability(tvos, introduced=9.0, deprecated=9.0))) __attribute__((availability(watchos, introduced=2.0, deprecated=2.0))) __attribute__((availability(ios, introduced=2.0, deprecated=7.0))) __attribute__((availability(macos, introduced=10.0, deprecated=10.9)));
@@ -2283,7 +2281,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef kCFBundleInfoDictionaryVersionKey;
@@ -2316,7 +2314,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef kCFPlugInDynamicRegistrationKey;
@@ -2341,7 +2339,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern double NSFoundationVersionNumber;
@@ -2406,7 +2404,7 @@ namespace TBS
         // +(void)setVersion:(NSInteger)aVersion;
         [Static]
         [Export("version")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         nint Version { get; set; }
 
         // @property (readonly) Class _Nonnull classForCoder;
@@ -2431,7 +2429,7 @@ namespace TBS
         // @required -(BOOL)beginContentAccess;
         [Abstract]
         [Export("beginContentAccess")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool BeginContentAccess { get; }
 
         // @required -(void)endContentAccess;
@@ -2447,7 +2445,7 @@ namespace TBS
         // @required -(BOOL)isContentDiscarded;
         [Abstract]
         [Export("isContentDiscarded")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool IsContentDiscarded { get; }
     }
 
@@ -2478,7 +2476,7 @@ namespace TBS
     {
         // -(ObjectType _Nullable)nextObject;
         [NullAllowed, Export("nextObject")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject NextObject { get; }
     }
 
@@ -2929,12 +2927,12 @@ namespace TBS
 
         // -(NSEnumerator<ObjectType> * _Nonnull)objectEnumerator;
         [Export("objectEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> ObjectEnumerator { get; }
 
         // -(NSEnumerator<ObjectType> * _Nonnull)reverseObjectEnumerator;
         [Export("reverseObjectEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> ReverseObjectEnumerator { get; }
 
         // @property (readonly, copy) NSData * _Nonnull sortedArrayHint;
@@ -3479,7 +3477,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSItemProviderPreferredImageSizeKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.10)));
@@ -3505,7 +3503,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Null_unspecified NSExtensionJavaScriptPreprocessingResultsKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.10)));
@@ -4040,7 +4038,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSStringTransform _Nonnull NSStringTransformLatinToKatakana __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=9.0))) __attribute__((availability(macos, introduced=10.11)));
@@ -4137,7 +4135,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSStringEncodingDetectionOptionsKey _Nonnull NSStringEncodingDetectionSuggestedEncodingsKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.10)));
@@ -4238,7 +4236,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSExceptionName _Nonnull NSCharacterConversionException;
@@ -4257,12 +4255,12 @@ namespace TBS
     {
         // -(id _Nonnull)propertyList;
         [Export("propertyList")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject PropertyList { get; }
 
         // -(NSDictionary * _Nullable)propertyListFromStringsFileFormat;
         [NullAllowed, Export("propertyListFromStringsFileFormat")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSDictionary PropertyListFromStringsFileFormat { get; }
     }
 
@@ -4281,7 +4279,7 @@ namespace TBS
         [Introduced(PlatformName.MacOSX, 10, 0, message: "Use -cStringUsingEncoding: instead")]
         [Deprecated(PlatformName.MacOSX, 10, 4, message: "Use -cStringUsingEncoding: instead")]
         [NullAllowed, Export("cString")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         unsafe sbyte* CString { get; }
 
         // -(const char * _Nullable)lossyCString __attribute__((availability(tvos, introduced=9.0, deprecated=9.0))) __attribute__((availability(watchos, introduced=2.0, deprecated=2.0))) __attribute__((availability(ios, introduced=2.0, deprecated=2.0))) __attribute__((availability(macos, introduced=10.0, deprecated=10.4))) __attribute__((objc_returns_inner_pointer));
@@ -4294,7 +4292,7 @@ namespace TBS
         [Introduced(PlatformName.MacOSX, 10, 0, message: "Use -cStringUsingEncoding: instead")]
         [Deprecated(PlatformName.MacOSX, 10, 4, message: "Use -cStringUsingEncoding: instead")]
         [NullAllowed, Export("lossyCString")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         unsafe sbyte* LossyCString { get; }
 
         // -(NSUInteger)cStringLength __attribute__((availability(tvos, introduced=9.0, deprecated=9.0))) __attribute__((availability(watchos, introduced=2.0, deprecated=2.0))) __attribute__((availability(ios, introduced=2.0, deprecated=2.0))) __attribute__((availability(macos, introduced=10.0, deprecated=10.4)));
@@ -4307,7 +4305,7 @@ namespace TBS
         [Introduced(PlatformName.MacOSX, 10, 0, message: "Use -lengthOfBytesUsingEncoding: instead")]
         [Deprecated(PlatformName.MacOSX, 10, 4, message: "Use -lengthOfBytesUsingEncoding: instead")]
         [Export("cStringLength")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         nuint CStringLength { get; }
 
         // -(void)getCString:(char * _Nonnull)bytes __attribute__((availability(tvos, introduced=9.0, deprecated=9.0))) __attribute__((availability(watchos, introduced=2.0, deprecated=2.0))) __attribute__((availability(ios, introduced=2.0, deprecated=2.0))) __attribute__((availability(macos, introduced=10.0, deprecated=10.4)));
@@ -4518,7 +4516,7 @@ namespace TBS
 
         // -(NSEnumerator<KeyType> * _Nonnull)keyEnumerator;
         [Export("keyEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> KeyEnumerator { get; }
 
         // -(instancetype _Nonnull)initWithObjects:(ObjectType  _Nonnull const * _Nullable)objects forKeys:(KeyType<NSCopying>  _Nonnull const * _Nullable)keys count:(NSUInteger)cnt __attribute__((objc_designated_initializer));
@@ -4571,7 +4569,7 @@ namespace TBS
 
         // -(NSEnumerator<ObjectType> * _Nonnull)objectEnumerator;
         [Export("objectEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> ObjectEnumerator { get; }
 
         // -(NSArray<ObjectType> * _Nonnull)objectsForKeys:(NSArray<KeyType> * _Nonnull)keys notFoundMarker:(ObjectType _Nonnull)marker;
@@ -4870,7 +4868,7 @@ namespace TBS
 
         // -(NSEnumerator<ObjectType> * _Nonnull)objectEnumerator;
         [Export("objectEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> ObjectEnumerator { get; }
 
         // -(instancetype _Nonnull)initWithObjects:(ObjectType  _Nonnull const * _Nullable)objects count:(NSUInteger)cnt __attribute__((objc_designated_initializer));
@@ -4895,7 +4893,7 @@ namespace TBS
 
         // -(ObjectType _Nullable)anyObject;
         [NullAllowed, Export("anyObject")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject AnyObject { get; }
 
         // -(BOOL)containsObject:(ObjectType _Nonnull)anObject;
@@ -5106,7 +5104,7 @@ namespace TBS
 
         // -(NSEnumerator<ObjectType> * _Nonnull)objectEnumerator;
         [Export("objectEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> ObjectEnumerator { get; }
 
         // -(void)addObject:(ObjectType _Nonnull)object;
@@ -5126,7 +5124,7 @@ namespace TBS
         // +(NSProgress * _Nullable)currentProgress;
         [Static]
         [NullAllowed, Export("currentProgress")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSProgress CurrentProgress { get; }
 
         // +(NSProgress * _Nonnull)progressWithTotalUnitCount:(int64_t)unitCount;
@@ -5327,7 +5325,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSProgressUserInfoKey _Nonnull NSProgressEstimatedTimeRemainingKey __attribute__((availability(ios, introduced=7_0)));
@@ -5539,7 +5537,7 @@ namespace TBS
 
         // -(BOOL)load;
         [Export("load")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool Load { get; }
 
         // @property (readonly, getter = isLoaded) BOOL loaded;
@@ -5548,7 +5546,7 @@ namespace TBS
 
         // -(BOOL)unload;
         [Export("unload")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool Unload { get; }
 
         // -(BOOL)preflightAndReturnError:(NSError * _Nullable * _Nullable)error __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -5788,7 +5786,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSBundleDidLoadNotification;
@@ -5861,7 +5859,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSBundleResourceRequestLowDiskSpaceNotification __attribute__((availability(macos, unavailable))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=9.0)));
@@ -5876,7 +5874,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSSystemClockDidChangeNotification __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -6022,7 +6020,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSCalendarIdentifier _Nonnull NSCalendarIdentifierGregorian __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -6433,7 +6431,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSCalendarDayChangedNotification __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.9)));
@@ -6532,7 +6530,7 @@ namespace TBS
         [Introduced(PlatformName.iOS, 2, 0, message: "Use weekOfMonth or weekOfYear, depending on which you mean")]
         [Deprecated(PlatformName.iOS, 7, 0, message: "Use weekOfMonth or weekOfYear, depending on which you mean")]
         [Export("week")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         nint Week { get; set; }
 
         // -(void)setValue:(NSInteger)value forComponent:(NSCalendarUnit)unit __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.9)));
@@ -6722,92 +6720,92 @@ namespace TBS
         // +(NSMutableCharacterSet * _Nonnull)controlCharacterSet;
         [Static]
         [Export("controlCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet ControlCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)whitespaceCharacterSet;
         [Static]
         [Export("whitespaceCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet WhitespaceCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)whitespaceAndNewlineCharacterSet;
         [Static]
         [Export("whitespaceAndNewlineCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet WhitespaceAndNewlineCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)decimalDigitCharacterSet;
         [Static]
         [Export("decimalDigitCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet DecimalDigitCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)letterCharacterSet;
         [Static]
         [Export("letterCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet LetterCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)lowercaseLetterCharacterSet;
         [Static]
         [Export("lowercaseLetterCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet LowercaseLetterCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)uppercaseLetterCharacterSet;
         [Static]
         [Export("uppercaseLetterCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet UppercaseLetterCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)nonBaseCharacterSet;
         [Static]
         [Export("nonBaseCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet NonBaseCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)alphanumericCharacterSet;
         [Static]
         [Export("alphanumericCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet AlphanumericCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)decomposableCharacterSet;
         [Static]
         [Export("decomposableCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet DecomposableCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)illegalCharacterSet;
         [Static]
         [Export("illegalCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet IllegalCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)punctuationCharacterSet;
         [Static]
         [Export("punctuationCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet PunctuationCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)capitalizedLetterCharacterSet;
         [Static]
         [Export("capitalizedLetterCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet CapitalizedLetterCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)symbolCharacterSet;
         [Static]
         [Export("symbolCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet SymbolCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)newlineCharacterSet __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
         [Watch(2, 0), TV(9, 0), Mac(10, 5), iOS(2, 0)]
         [Static]
         [Export("newlineCharacterSet")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMutableCharacterSet NewlineCharacterSet { get; }
 
         // +(NSMutableCharacterSet * _Nonnull)characterSetWithRange:(NSRange)aRange;
@@ -6846,7 +6844,7 @@ namespace TBS
 
         // -(NSData * _Nullable)decodeDataObject;
         [NullAllowed, Export("decodeDataObject")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSData DecodeDataObject { get; }
 
         // -(void)decodeValueOfObjCType:(const char * _Nonnull)type at:(void * _Nonnull)data size:(NSUInteger)size __attribute__((availability(tvos, introduced=11.0))) __attribute__((availability(watchos, introduced=4.0))) __attribute__((availability(ios, introduced=11.0))) __attribute__((availability(macos, introduced=10.13)));
@@ -6899,7 +6897,7 @@ namespace TBS
 
         // -(id _Nullable)decodeObject;
         [NullAllowed, Export("decodeObject")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject DecodeObject { get; }
 
         // -(id _Nullable)decodeTopLevelObjectAndReturnError:(NSError * _Nullable * _Nullable)error __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=9.0))) __attribute__((availability(macos, introduced=10.11)));
@@ -6925,7 +6923,7 @@ namespace TBS
         // -(NSZone * _Nullable)objectZone;
         // -(void)setObjectZone:(NSZone * _Nullable)zone;
         [NullAllowed, Export("objectZone")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         unsafe NSZone* ObjectZone { get; set; }
 
         // @property (readonly) unsigned int systemVersion;
@@ -7340,7 +7338,7 @@ namespace TBS
         [Introduced(PlatformName.MacOSX, 10, 6, message: "Use base64EncodedStringWithOptions instead")]
         [Deprecated(PlatformName.MacOSX, 10, 9, message: "Use base64EncodedStringWithOptions instead")]
         [Export("base64Encoding")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         string Base64Encoding { get; }
     }
 
@@ -9104,7 +9102,7 @@ namespace TBS
         // +(void)setDefaultFormatterBehavior:(NSNumberFormatterBehavior)behavior;
         [Static]
         [Export("defaultFormatterBehavior")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSNumberFormatterBehavior DefaultFormatterBehavior { get; set; }
 
         // @property NSNumberFormatterStyle numberStyle;
@@ -9624,7 +9622,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSCurrentLocaleDidChangeNotification __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -9882,7 +9880,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSPersonNameComponentKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=9.0))) __attribute__((availability(macos, introduced=10.11)));
@@ -10038,7 +10036,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSExceptionName _Nonnull NSGenericException;
@@ -10156,7 +10154,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSAssertionHandlerKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -10186,7 +10184,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSExceptionName _Nonnull NSDecimalNumberExactnessException;
@@ -10213,13 +10211,13 @@ namespace TBS
         // @required -(NSRoundingMode)roundingMode;
         [Abstract]
         [Export("roundingMode")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSRoundingMode RoundingMode { get; }
 
         // @required -(short)scale;
         [Abstract]
         [Export("scale")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         short Scale { get; }
 
         // @required -(NSDecimalNumber * _Nullable)exceptionDuringOperation:(SEL _Nonnull)operation error:(NSCalculationError)error leftOperand:(NSDecimalNumber * _Nonnull)leftOperand rightOperand:(NSDecimalNumber * _Nullable)rightOperand;
@@ -10414,7 +10412,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSErrorDomain _Nonnull NSCocoaErrorDomain;
@@ -10563,7 +10561,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSRunLoopMode _Nonnull NSDefaultRunLoopMode;
@@ -10597,7 +10595,7 @@ namespace TBS
 
         // -(CFRunLoopRef _Nonnull)getCFRunLoop __attribute__((cf_returns_not_retained));
         [Export("getCFRunLoop")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         unsafe CFRunLoopRef* CFRunLoop { get; }
 
         // -(void)addTimer:(NSTimer * _Nonnull)timer forMode:(NSRunLoopMode _Nonnull)mode;
@@ -10702,7 +10700,7 @@ namespace TBS
 
         // -(NSData * _Nonnull)readDataToEndOfFile;
         [Export("readDataToEndOfFile")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSData ReadDataToEndOfFile { get; }
 
         // -(NSData * _Nonnull)readDataOfLength:(NSUInteger)length;
@@ -10719,7 +10717,7 @@ namespace TBS
 
         // -(unsigned long long)seekToEndOfFile;
         [Export("seekToEndOfFile")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         ulong SeekToEndOfFile { get; }
 
         // -(void)seekToFileOffset:(unsigned long long)offset;
@@ -10815,7 +10813,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSExceptionName _Nonnull NSFileHandleOperationException;
@@ -10936,7 +10934,7 @@ namespace TBS
         // +(NSPipe * _Nonnull)pipe;
         [Static]
         [Export("pipe")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSPipe Pipe { get; }
     }
 
@@ -11241,13 +11239,13 @@ namespace TBS
         // -(BOOL)isFileReferenceURL __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
         [Watch(2, 0), TV(9, 0), Mac(10, 6), iOS(4, 0)]
         [Export("isFileReferenceURL")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool IsFileReferenceURL { get; }
 
         // -(NSURL * _Nullable)fileReferenceURL __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
         [Watch(2, 0), TV(9, 0), Mac(10, 6), iOS(4, 0)]
         [NullAllowed, Export("fileReferenceURL")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSUrl FileReferenceURL { get; }
 
         // @property (readonly, copy) NSURL * _Nullable filePathURL __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -11339,7 +11337,7 @@ namespace TBS
         // -(BOOL)startAccessingSecurityScopedResource __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.7)));
         [Watch(2, 0), TV(9, 0), Mac(10, 7), iOS(8, 0)]
         [Export("startAccessingSecurityScopedResource")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool StartAccessingSecurityScopedResource { get; }
 
         // -(void)stopAccessingSecurityScopedResource __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.7)));
@@ -11349,7 +11347,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString * _Nonnull NSURLFileScheme;
@@ -12400,7 +12398,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSFileManagerUnmountDissentingProcessIdentifierErrorKey __attribute__((availability(tvos, unavailable))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(ios, unavailable))) __attribute__((availability(macos, introduced=10.11)));
@@ -12605,7 +12603,7 @@ namespace TBS
         [Introduced(PlatformName.MacOSX, 10, 0, message: "Use -contentsOfDirectoryAtPath:error: instead")]
         [Deprecated(PlatformName.MacOSX, 10, 5, message: "Use -contentsOfDirectoryAtPath:error: instead")]
         [Export("directoryContentsAtPath:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         [return: NullAllowed]
         NSObject[] DirectoryContentsAtPath(string path);
 
@@ -12963,7 +12961,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSFileAttributeKey _Nonnull NSFileType;
@@ -13119,82 +13117,82 @@ namespace TBS
     {
         // -(unsigned long long)fileSize;
         [Export("fileSize")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         ulong FileSize { get; }
 
         // -(NSDate * _Nullable)fileModificationDate;
         [NullAllowed, Export("fileModificationDate")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSDate FileModificationDate { get; }
 
         // -(NSString * _Nullable)fileType;
         [NullAllowed, Export("fileType")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         string FileType { get; }
 
         // -(NSUInteger)filePosixPermissions;
         [Export("filePosixPermissions")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         nuint FilePosixPermissions { get; }
 
         // -(NSString * _Nullable)fileOwnerAccountName;
         [NullAllowed, Export("fileOwnerAccountName")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         string FileOwnerAccountName { get; }
 
         // -(NSString * _Nullable)fileGroupOwnerAccountName;
         [NullAllowed, Export("fileGroupOwnerAccountName")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         string FileGroupOwnerAccountName { get; }
 
         // -(NSInteger)fileSystemNumber;
         [Export("fileSystemNumber")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         nint FileSystemNumber { get; }
 
         // -(NSUInteger)fileSystemFileNumber;
         [Export("fileSystemFileNumber")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         nuint FileSystemFileNumber { get; }
 
         // -(BOOL)fileExtensionHidden;
         [Export("fileExtensionHidden")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool FileExtensionHidden { get; }
 
         // -(OSType)fileHFSCreatorCode;
         [Export("fileHFSCreatorCode")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         uint FileHFSCreatorCode { get; }
 
         // -(OSType)fileHFSTypeCode;
         [Export("fileHFSTypeCode")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         uint FileHFSTypeCode { get; }
 
         // -(BOOL)fileIsImmutable;
         [Export("fileIsImmutable")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool FileIsImmutable { get; }
 
         // -(BOOL)fileIsAppendOnly;
         [Export("fileIsAppendOnly")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool FileIsAppendOnly { get; }
 
         // -(NSDate * _Nullable)fileCreationDate;
         [NullAllowed, Export("fileCreationDate")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSDate FileCreationDate { get; }
 
         // -(NSNumber * _Nullable)fileOwnerAccountID;
         [NullAllowed, Export("fileOwnerAccountID")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSNumber FileOwnerAccountID { get; }
 
         // -(NSNumber * _Nullable)fileGroupOwnerAccountID;
         [NullAllowed, Export("fileGroupOwnerAccountID")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSNumber FileGroupOwnerAccountID { get; }
     }
 
@@ -13288,14 +13286,14 @@ namespace TBS
         [NoWatch, NoTV, NoiOS]
         [Static]
         [Export("hashTableWithWeakObjects")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject HashTableWithWeakObjects { get; }
 
         // +(NSHashTable<ObjectType> * _Nonnull)weakObjectsHashTable __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=6.0))) __attribute__((availability(macos, introduced=10.8)));
         [Watch(2, 0), TV(9, 0), Mac(10, 8), iOS(6, 0)]
         [Static]
         [Export("weakObjectsHashTable")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSHashTable<NSObject> WeakObjectsHashTable { get; }
 
         // @property (readonly, copy) NSPointerFunctions * _Nonnull pointerFunctions;
@@ -13313,7 +13311,7 @@ namespace TBS
 
         // -(NSEnumerator<ObjectType> * _Nonnull)objectEnumerator;
         [Export("objectEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> ObjectEnumerator { get; }
 
         // -(void)addObject:(ObjectType _Nullable)object;
@@ -13370,7 +13368,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSHashTableCallBacks NSIntegerHashCallBacks __attribute__((availability(tvos, unavailable))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(ios, unavailable))) __attribute__((availability(macos, introduced=10.5)));
@@ -13607,7 +13605,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSHTTPCookieManagerAcceptPolicyChangedNotification;
@@ -13648,7 +13646,7 @@ namespace TBS
 
         // -(NSIndexPath * _Nonnull)indexPathByRemovingLastIndex;
         [Export("indexPathByRemovingLastIndex")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSIndexPath IndexPathByRemovingLastIndex { get; }
 
         // -(NSUInteger)indexAtPosition:(NSUInteger)position;
@@ -14035,12 +14033,12 @@ namespace TBS
 
         // -(NSEnumerator<ObjectType> * _Nonnull)objectEnumerator;
         [Export("objectEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> ObjectEnumerator { get; }
 
         // -(NSEnumerator<ObjectType> * _Nonnull)reverseObjectEnumerator;
         [Export("reverseObjectEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> ReverseObjectEnumerator { get; }
 
         // @property (readonly, copy) NSOrderedSet<ObjectType> * _Nonnull reversedOrderedSet;
@@ -14356,7 +14354,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSExceptionName _Nonnull NSUndefinedKeyException;
@@ -14558,7 +14556,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSKeyValueChangeKey _Nonnull NSKeyValueChangeKindKey;
@@ -14799,7 +14797,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSExceptionName _Nonnull NSInvalidArchiveOperationException;
@@ -15183,7 +15181,7 @@ namespace TBS
         // +(NSArray<NSString *> * _Nonnull)classFallbacksForKeyedArchiver;
         [Static]
         [Export("classFallbacksForKeyedArchiver")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         string[] ClassFallbacksForKeyedArchiver { get; }
     }
 
@@ -15195,7 +15193,7 @@ namespace TBS
         // +(Class _Nonnull)classForKeyedUnarchiver;
         [Static]
         [Export("classForKeyedUnarchiver")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         Class ClassForKeyedUnarchiver { get; }
     }
 
@@ -15220,7 +15218,7 @@ namespace TBS
     {
         // -(BOOL)tryLock;
         [Export("tryLock")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool TryLock { get; }
 
         // -(BOOL)lockBeforeDate:(NSDate * _Nonnull)limit;
@@ -15252,7 +15250,7 @@ namespace TBS
 
         // -(BOOL)tryLock;
         [Export("tryLock")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool TryLock { get; }
 
         // -(BOOL)tryLockWhenCondition:(NSInteger)condition;
@@ -15283,7 +15281,7 @@ namespace TBS
     {
         // -(BOOL)tryLock;
         [Export("tryLock")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool TryLock { get; }
 
         // -(BOOL)lockBeforeDate:(NSDate * _Nonnull)limit;
@@ -15349,7 +15347,7 @@ namespace TBS
         [NoWatch, NoTV, NoiOS]
         [Static]
         [Export("mapTableWithStrongToStrongObjects")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject MapTableWithStrongToStrongObjects { get; }
 
         // +(id _Nonnull)mapTableWithWeakToStrongObjects __attribute__((availability(tvos, unavailable))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(ios, unavailable))) __attribute__((availability(macos, introduced=10.5, deprecated=10.8)));
@@ -15358,7 +15356,7 @@ namespace TBS
         [NoWatch, NoTV, NoiOS]
         [Static]
         [Export("mapTableWithWeakToStrongObjects")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject MapTableWithWeakToStrongObjects { get; }
 
         // +(id _Nonnull)mapTableWithStrongToWeakObjects __attribute__((availability(tvos, unavailable))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(ios, unavailable))) __attribute__((availability(macos, introduced=10.5, deprecated=10.8)));
@@ -15367,7 +15365,7 @@ namespace TBS
         [NoWatch, NoTV, NoiOS]
         [Static]
         [Export("mapTableWithStrongToWeakObjects")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject MapTableWithStrongToWeakObjects { get; }
 
         // +(id _Nonnull)mapTableWithWeakToWeakObjects __attribute__((availability(tvos, unavailable))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(ios, unavailable))) __attribute__((availability(macos, introduced=10.5, deprecated=10.8)));
@@ -15376,35 +15374,35 @@ namespace TBS
         [NoWatch, NoTV, NoiOS]
         [Static]
         [Export("mapTableWithWeakToWeakObjects")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject MapTableWithWeakToWeakObjects { get; }
 
         // +(NSMapTable<KeyType,ObjectType> * _Nonnull)strongToStrongObjectsMapTable __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=6.0))) __attribute__((availability(macos, introduced=10.8)));
         [Watch(2, 0), TV(9, 0), Mac(10, 8), iOS(6, 0)]
         [Static]
         [Export("strongToStrongObjectsMapTable")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMapTable<NSObject, NSObject> StrongToStrongObjectsMapTable { get; }
 
         // +(NSMapTable<KeyType,ObjectType> * _Nonnull)weakToStrongObjectsMapTable __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=6.0))) __attribute__((availability(macos, introduced=10.8)));
         [Watch(2, 0), TV(9, 0), Mac(10, 8), iOS(6, 0)]
         [Static]
         [Export("weakToStrongObjectsMapTable")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMapTable<NSObject, NSObject> WeakToStrongObjectsMapTable { get; }
 
         // +(NSMapTable<KeyType,ObjectType> * _Nonnull)strongToWeakObjectsMapTable __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=6.0))) __attribute__((availability(macos, introduced=10.8)));
         [Watch(2, 0), TV(9, 0), Mac(10, 8), iOS(6, 0)]
         [Static]
         [Export("strongToWeakObjectsMapTable")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMapTable<NSObject, NSObject> StrongToWeakObjectsMapTable { get; }
 
         // +(NSMapTable<KeyType,ObjectType> * _Nonnull)weakToWeakObjectsMapTable __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=6.0))) __attribute__((availability(macos, introduced=10.8)));
         [Watch(2, 0), TV(9, 0), Mac(10, 8), iOS(6, 0)]
         [Static]
         [Export("weakToWeakObjectsMapTable")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMapTable<NSObject, NSObject> WeakToWeakObjectsMapTable { get; }
 
         // @property (readonly, copy) NSPointerFunctions * _Nonnull keyPointerFunctions;
@@ -15434,12 +15432,12 @@ namespace TBS
 
         // -(NSEnumerator<KeyType> * _Nonnull)keyEnumerator;
         [Export("keyEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> KeyEnumerator { get; }
 
         // -(NSEnumerator<ObjectType> * _Nullable)objectEnumerator;
         [NullAllowed, Export("objectEnumerator")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSEnumerator<NSObject> ObjectEnumerator { get; }
 
         // -(void)removeAllObjects;
@@ -15448,12 +15446,12 @@ namespace TBS
 
         // -(NSDictionary<KeyType,ObjectType> * _Nonnull)dictionaryRepresentation;
         [Export("dictionaryRepresentation")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSDictionary<NSObject, NSObject> DictionaryRepresentation { get; }
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSMapTableKeyCallBacks NSIntegerMapKeyCallBacks __attribute__((availability(tvos, unavailable))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(ios, unavailable))) __attribute__((availability(macos, introduced=10.5)));
@@ -15551,7 +15549,7 @@ namespace TBS
 
         // -(BOOL)isOneway;
         [Export("isOneway")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool IsOneway { get; }
 
         // @property (readonly) const char * _Nonnull methodReturnType __attribute__((objc_returns_inner_pointer));
@@ -15597,7 +15595,7 @@ namespace TBS
         // +(NSNull * _Nonnull)null;
         [Static]
         [Export("null")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSNull Null { get; }
     }
 
@@ -15735,7 +15733,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSExceptionName _Nonnull NSInvocationOperationVoidResultException __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -15965,24 +15963,24 @@ namespace TBS
         [Watch(2, 0), TV(9, 0), Mac(10, 8), iOS(6, 0)]
         [Static]
         [Export("strongObjectsPointerArray")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSPointerArray StrongObjectsPointerArray { get; }
 
         // +(NSPointerArray * _Nonnull)weakObjectsPointerArray __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=6.0))) __attribute__((availability(macos, introduced=10.8)));
         [Watch(2, 0), TV(9, 0), Mac(10, 8), iOS(6, 0)]
         [Static]
         [Export("weakObjectsPointerArray")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSPointerArray WeakObjectsPointerArray { get; }
 
         // @property (readonly, copy) NSArray * _Nonnull allObjects;
         [Export("allObjects", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] AllObjects { get; }
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSPortDidBecomeInvalidNotification;
@@ -15997,7 +15995,7 @@ namespace TBS
         // +(NSPort * _Nonnull)port;
         [Static]
         [Export("port")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSPort Port { get; }
 
         // -(void)invalidate;
@@ -16011,7 +16009,7 @@ namespace TBS
         // -(id<NSPortDelegate> _Nullable)delegate;
         // -(void)setDelegate:(id<NSPortDelegate> _Nullable)anObject;
         [NullAllowed, Export("delegate")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSPortDelegate Delegate { get; set; }
 
         // -(void)scheduleInRunLoop:(NSRunLoop * _Nonnull)runLoop forMode:(NSRunLoopMode _Nonnull)mode;
@@ -16062,7 +16060,7 @@ namespace TBS
         // -(id<NSMachPortDelegate> _Nullable)delegate;
         // -(void)setDelegate:(id<NSMachPortDelegate> _Nullable)anObject;
         [NullAllowed, Export("delegate")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSMachPortDelegate Delegate { get; set; }
 
         // +(NSPort * _Nonnull)portWithMachPort:(uint32_t)machPort options:(NSMachPortOptions)f __attribute__((availability(ios, introduced=2_0)));
@@ -16148,7 +16146,7 @@ namespace TBS
         [Introduced(PlatformName.MacOSX, 10, 0, message: "-operatingSystem always returns NSMACHOperatingSystem, use -operatingSystemVersion or -isOperatingSystemAtLeastVersion: instead")]
         [Deprecated(PlatformName.MacOSX, 10, 10, message: "-operatingSystem always returns NSMACHOperatingSystem, use -operatingSystemVersion or -isOperatingSystemAtLeastVersion: instead")]
         [Export("operatingSystem")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         nuint OperatingSystem { get; }
 
         // -(NSString * _Nonnull)operatingSystemName __attribute__((availability(tvos, introduced=9.0, deprecated=9.0))) __attribute__((availability(watchos, introduced=2.0, deprecated=2.0))) __attribute__((availability(ios, introduced=2.0, deprecated=8.0))) __attribute__((availability(macos, introduced=10.0, deprecated=10.10)));
@@ -16161,7 +16159,7 @@ namespace TBS
         [Introduced(PlatformName.MacOSX, 10, 0, message: "-operatingSystemName always returns NSMACHOperatingSystem, use -operatingSystemVersionString instead")]
         [Deprecated(PlatformName.MacOSX, 10, 10, message: "-operatingSystemName always returns NSMACHOperatingSystem, use -operatingSystemVersionString instead")]
         [Export("operatingSystemName")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         string OperatingSystemName { get; }
 
         // @property (readonly, copy) NSString * _Nonnull operatingSystemVersionString;
@@ -16289,7 +16287,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSProcessInfoThermalStateDidChangeNotification __attribute__((availability(tvos, introduced=11.0))) __attribute__((availability(watchos, introduced=4.0))) __attribute__((availability(ios, introduced=11.0))) __attribute__((availability(macos, introduced=10.10.3)));
@@ -16310,7 +16308,7 @@ namespace TBS
         // +(id _Nonnull)alloc;
         [Static]
         [Export("alloc")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject Alloc { get; }
 
         // +(id _Nonnull)allocWithZone:(NSZone * _Nullable)zone;
@@ -16321,7 +16319,7 @@ namespace TBS
         // +(Class _Nonnull)class;
         [Static]
         [Export("class")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         Class Class { get; }
 
         // -(void)forwardInvocation:(NSInvocation * _Nonnull)invocation;
@@ -16448,7 +16446,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSTextCheckingKey _Nonnull NSTextCheckingNameKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -17014,7 +17012,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSStreamPropertyKey _Nonnull NSStreamSocketSecurityLevelKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.3)));
@@ -17161,7 +17159,7 @@ namespace TBS
         // +(BOOL)isMultiThreaded;
         [Static]
         [Export("isMultiThreaded")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool IsMultiThreaded { get; }
 
         // @property (readonly, retain) NSMutableDictionary * _Nonnull threadDictionary;
@@ -17186,7 +17184,7 @@ namespace TBS
         // +(double)threadPriority;
         [Static]
         [Export("threadPriority")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         double ThreadPriority { get; }
 
         // +(BOOL)setThreadPriority:(double)p;
@@ -17285,7 +17283,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSWillBecomeMultiThreadedNotification;
@@ -17484,7 +17482,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSSystemTimeZoneDidChangeNotification __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -17962,7 +17960,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kSecClass __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -18770,7 +18768,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kSecPrivateKeyAttrs __attribute__((availability(ios, introduced=2.0)));
@@ -19175,7 +19173,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kSecPolicyAppleX509Basic __attribute__((availability(ios, introduced=7.0)));
@@ -19275,7 +19273,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const SecRandomRef _Nonnull kSecRandomDefault __attribute__((availability(ios, introduced=2.0)));
@@ -19325,7 +19323,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kSecPropertyTypeTitle __attribute__((availability(ios, introduced=7.0)));
@@ -19384,7 +19382,7 @@ namespace TBS
     unsafe delegate void SecTrustCallback(SecTrustRef* arg0, SecTrustResultType arg1);
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kSecSharedPassword __attribute__((availability(watchos, unavailable))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(macos, unavailable))) __attribute__((availability(ios, introduced=8.0)));
@@ -19401,7 +19399,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kSSLSessionConfig_default __attribute__((availability(ios, introduced=5.0, deprecated=11.0)));
@@ -19567,14 +19565,14 @@ namespace TBS
         // -(instancetype _Nonnull)initWithIdentity:(SecIdentityRef _Nonnull)identity certificates:(NSArray * _Nullable)certArray persistence:(NSURLCredentialPersistence)persistence __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=3.0))) __attribute__((availability(macos, introduced=10.6)));
         [Watch(2, 0), TV(9, 0), Mac(10, 6), iOS(3, 0)]
         [Export("initWithIdentity:certificates:persistence:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         unsafe IntPtr Constructor(SecIdentityRef* identity, [NullAllowed] NSObject[] certArray, NSURLCredentialPersistence persistence);
 
         // +(NSURLCredential * _Nonnull)credentialWithIdentity:(SecIdentityRef _Nonnull)identity certificates:(NSArray * _Nullable)certArray persistence:(NSURLCredentialPersistence)persistence __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=3.0))) __attribute__((availability(macos, introduced=10.6)));
         [Watch(2, 0), TV(9, 0), Mac(10, 6), iOS(3, 0)]
         [Static]
         [Export("credentialWithIdentity:certificates:persistence:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         unsafe NSUrlCredential CredentialWithIdentity(SecIdentityRef* identity, [NullAllowed] NSObject[] certArray, NSURLCredentialPersistence persistence);
 
         // @property (readonly) SecIdentityRef _Nullable identity;
@@ -19584,7 +19582,7 @@ namespace TBS
         // @property (readonly, copy) NSArray * _Nonnull certificates __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=3.0))) __attribute__((availability(macos, introduced=10.6)));
         [Watch(2, 0), TV(9, 0), Mac(10, 6), iOS(3, 0)]
         [Export("certificates", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] Certificates { get; }
     }
 
@@ -19606,7 +19604,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSURLProtectionSpaceHTTP __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -19817,7 +19815,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSURLCredentialStorageChangedNotification;
@@ -19841,7 +19839,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCFURLErrorFailingURLErrorKey __attribute__((availability(ios, introduced=2_2)));
@@ -19896,7 +19894,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const SInt32 kCFStreamErrorDomainMach __attribute__((availability(ios, introduced=2_0)));
@@ -19911,7 +19909,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCFStreamPropertySSLContext __attribute__((availability(ios, introduced=5_0)));
@@ -20007,7 +20005,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCFStreamPropertyProxyLocalBypass __attribute__((availability(ios, introduced=2_0)));
@@ -20236,7 +20234,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCFStreamPropertyHTTPResponseHeader __attribute__((availability(ios, introduced=2_0, deprecated=9_0)));
@@ -20307,7 +20305,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCFHTTPAuthenticationUsername __attribute__((availability(ios, introduced=2_0)));
@@ -20327,7 +20325,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCFProxyTypeKey __attribute__((availability(ios, introduced=2_0)));
@@ -20921,7 +20919,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSGlobalDomain;
@@ -20989,7 +20987,7 @@ namespace TBS
 
         // -(NSArray * _Nullable)arrayForKey:(NSString * _Nonnull)defaultName;
         [Export("arrayForKey:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         [return: NullAllowed]
         NSObject[] ArrayForKey(string defaultName);
 
@@ -21065,7 +21063,7 @@ namespace TBS
 
         // -(NSDictionary<NSString *,id> * _Nonnull)dictionaryRepresentation;
         [Export("dictionaryRepresentation")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSDictionary<NSString, NSObject> DictionaryRepresentation { get; }
 
         // @property (readonly, copy) NSArray<NSString *> * _Nonnull volatileDomainNames;
@@ -21094,7 +21092,7 @@ namespace TBS
         [Introduced(PlatformName.MacOSX, 10, 0, message: "Not recommended")]
         [Deprecated(PlatformName.MacOSX, 10, 9, message: "Not recommended")]
         [Export("persistentDomainNames")]
-        [Verify(MethodToProperty), Verify(StronglyTypedNSArray)]
+        //	[Verify (MethodToProperty), Verify (StronglyTypedNSArray)]
         NSObject[] PersistentDomainNames { get; }
 
         // -(NSDictionary<NSString *,id> * _Nullable)persistentDomainForName:(NSString * _Nonnull)domainName;
@@ -21112,7 +21110,7 @@ namespace TBS
 
         // -(BOOL)synchronize;
         [Export("synchronize")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool Synchronize { get; }
 
         // -(BOOL)objectIsForcedForKey:(NSString * _Nonnull)key;
@@ -21125,7 +21123,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSUserDefaultsSizeLimitExceededNotification __attribute__((availability(macos, unavailable))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=9.3)));
@@ -21216,19 +21214,19 @@ namespace TBS
         // +(NSArray<NSValueTransformerName> * _Nonnull)valueTransformerNames;
         [Static]
         [Export("valueTransformerNames")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         string[] ValueTransformerNames { get; }
 
         // +(Class _Nonnull)transformedValueClass;
         [Static]
         [Export("transformedValueClass")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         Class TransformedValueClass { get; }
 
         // +(BOOL)allowsReverseTransformation;
         [Static]
         [Export("allowsReverseTransformation")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool AllowsReverseTransformation { get; }
 
         // -(id _Nullable)transformedValue:(id _Nullable)value;
@@ -21299,7 +21297,7 @@ namespace TBS
 
         // -(BOOL)parse;
         [Export("parse")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool Parse { get; }
 
         // -(void)abortParsing;
@@ -21425,7 +21423,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSErrorDomain _Nonnull NSXMLParserErrorDomain __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.3)));
@@ -21441,7 +21439,7 @@ namespace TBS
         // @required -(id _Nonnull)remoteObjectProxy;
         [Abstract]
         [Export("remoteObjectProxy")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSObject RemoteObjectProxy { get; }
 
         // @required -(id _Nonnull)remoteObjectProxyWithErrorHandler:(void (^ _Nonnull)(NSError * _Nonnull))handler;
@@ -21552,13 +21550,13 @@ namespace TBS
         // +(NSXPCListener * _Nonnull)serviceListener;
         [Static]
         [Export("serviceListener")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSXPCListener ServiceListener { get; }
 
         // +(NSXPCListener * _Nonnull)anonymousListener;
         [Static]
         [Export("anonymousListener")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSXPCListener AnonymousListener { get; }
 
         // -(instancetype _Nonnull)initWithMachServiceName:(NSString * _Nonnull)name __attribute__((availability(tvos, unavailable))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(ios, unavailable))) __attribute__((objc_designated_initializer));
@@ -21762,7 +21760,7 @@ namespace TBS
         // +(NSPredicate * _Nonnull)predicateWithFormat:(NSString * _Nonnull)predicateFormat argumentArray:(NSArray * _Nullable)arguments;
         [Static]
         [Export("predicateWithFormat:argumentArray:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSPredicate PredicateWithFormat(string predicateFormat, [NullAllowed] NSObject[] arguments);
 
         // +(NSPredicate * _Nonnull)predicateWithFormat:(NSString * _Nonnull)predicateFormat, ...;
@@ -21956,7 +21954,7 @@ namespace TBS
 
         // @property (readonly, copy) NSArray * _Nonnull subpredicates;
         [Export("subpredicates", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] Subpredicates { get; }
 
         // +(NSCompoundPredicate * _Nonnull)andPredicateWithSubpredicates:(NSArray<NSPredicate *> * _Nonnull)subpredicates;
@@ -22065,7 +22063,7 @@ namespace TBS
         [Watch(2, 0), TV(9, 0), Mac(10, 6), iOS(4, 0)]
         [Static]
         [Export("expressionWithFormat:argumentArray:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSExpression ExpressionWithFormat(string expressionFormat, NSObject[] arguments);
 
         // +(NSExpression * _Nonnull)expressionWithFormat:(NSString * _Nonnull)expressionFormat, ... __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -22088,7 +22086,7 @@ namespace TBS
         // +(NSExpression * _Nonnull)expressionForEvaluatedObject;
         [Static]
         [Export("expressionForEvaluatedObject")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSExpression ExpressionForEvaluatedObject { get; }
 
         // +(NSExpression * _Nonnull)expressionForVariable:(NSString * _Nonnull)string;
@@ -22104,7 +22102,7 @@ namespace TBS
         // +(NSExpression * _Nonnull)expressionForFunction:(NSString * _Nonnull)name arguments:(NSArray * _Nonnull)parameters;
         [Static]
         [Export("expressionForFunction:arguments:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSExpression ExpressionForFunction(string name, NSObject[] parameters);
 
         // +(NSExpression * _Nonnull)expressionForAggregate:(NSArray<NSExpression *> * _Nonnull)subexpressions __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=3.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -22141,14 +22139,14 @@ namespace TBS
         [Watch(2, 0), TV(9, 0), Mac(10, 5), iOS(3, 0)]
         [Static]
         [Export("expressionForFunction:selectorName:arguments:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSExpression ExpressionForFunction(NSExpression target, string name, [NullAllowed] NSObject[] parameters);
 
         // +(NSExpression * _Nonnull)expressionForAnyKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=7.0))) __attribute__((availability(macos, introduced=10.9)));
         [Watch(2, 0), TV(9, 0), Mac(10, 9), iOS(7, 0)]
         [Static]
         [Export("expressionForAnyKey")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSExpression ExpressionForAnyKey { get; }
 
         // +(NSExpression * _Nonnull)expressionForBlock:(id  _Nonnull (^ _Nonnull)(id _Nullable, NSArray<NSExpression *> * _Nonnull, NSMutableDictionary * _Nullable))block arguments:(NSArray<NSExpression *> * _Nullable)arguments __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -22254,12 +22252,12 @@ namespace TBS
     {
         // @property (readonly, copy, nonatomic) NSArray * _Nonnull inputItems;
         [Export("inputItems", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] InputItems { get; }
 
         // -(void)completeRequestReturningItems:(NSArray * _Nullable)items completionHandler:(void (^ _Nullable)(BOOL))completionHandler;
         [Export("completeRequestReturningItems:completionHandler:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         void CompleteRequestReturningItems([NullAllowed] NSObject[] items, [NullAllowed] Action<bool> completionHandler);
 
         // -(void)cancelRequestWithError:(NSError * _Nonnull)error;
@@ -22272,7 +22270,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Null_unspecified NSExtensionItemsAndErrorsKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.10)));
@@ -22324,7 +22322,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Null_unspecified NSExtensionItemAttributedTitleKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.10)));
@@ -22766,7 +22764,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSLinguisticTagScheme _Nonnull NSLinguisticTagSchemeTokenType __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=5.0))) __attribute__((availability(macos, introduced=10.7)));
@@ -23106,7 +23104,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSMetadataItemFSNameKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=5.0))) __attribute__((availability(macos, introduced=10.7)));
@@ -24057,13 +24055,13 @@ namespace TBS
 
         // @property (copy) NSArray * _Nonnull searchScopes;
         [Export("searchScopes", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] SearchScopes { get; set; }
 
         // @property (copy) NSArray * _Nullable searchItems __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=7.0))) __attribute__((availability(macos, introduced=10.9)));
         [Watch(2, 0), TV(9, 0), Mac(10, 9), iOS(7, 0)]
         [NullAllowed, Export("searchItems", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] SearchItems { get; set; }
 
         // @property (retain) NSOperationQueue * _Nullable operationQueue __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=7.0))) __attribute__((availability(macos, introduced=10.9)));
@@ -24073,7 +24071,7 @@ namespace TBS
 
         // -(BOOL)startQuery;
         [Export("startQuery")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool StartQuery { get; }
 
         // -(void)stopQuery;
@@ -24120,7 +24118,7 @@ namespace TBS
 
         // @property (readonly, copy) NSArray * _Nonnull results;
         [Export("results", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] Results { get; }
 
         // -(NSUInteger)indexOfResult:(id _Nonnull)result;
@@ -24156,7 +24154,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSMetadataQueryDidStartGatheringNotification __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=5.0))) __attribute__((availability(macos, introduced=10.4)));
@@ -24311,12 +24309,12 @@ namespace TBS
 
         // @property (readonly, copy) NSArray * _Nonnull results;
         [Export("results", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] Results { get; }
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSNetServicesErrorCode;
@@ -24437,7 +24435,7 @@ namespace TBS
 
         // -(NSData * _Nullable)TXTRecordData;
         [NullAllowed, Export("TXTRecordData")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSData TXTRecordData { get; }
 
         // -(void)startMonitoring;
@@ -24601,7 +24599,7 @@ namespace TBS
 
         // -(NSArray * _Nullable)arrayForKey:(NSString * _Nonnull)aKey;
         [Export("arrayForKey:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         [return: NullAllowed]
         NSObject[] ArrayForKey(string aKey);
 
@@ -24637,7 +24635,7 @@ namespace TBS
 
         // -(void)setArray:(NSArray * _Nullable)anArray forKey:(NSString * _Nonnull)aKey;
         [Export("setArray:forKey:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         void SetArray([NullAllowed] NSObject[] anArray, string aKey);
 
         // -(void)setDictionary:(NSDictionary<NSString *,id> * _Nullable)aDictionary forKey:(NSString * _Nonnull)aKey;
@@ -24662,12 +24660,12 @@ namespace TBS
 
         // -(BOOL)synchronize;
         [Export("synchronize")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool Synchronize { get; }
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSNotificationName _Nonnull NSUbiquitousKeyValueStoreDidChangeExternallyNotification __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=5.0))) __attribute__((availability(macos, introduced=10.7)));
@@ -24821,7 +24819,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSUndoManagerGroupIsDiscardableKey __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=5.0))) __attribute__((availability(macos, introduced=10.7)));
@@ -25105,7 +25103,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const float NSURLSessionTaskPriorityDefault __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.10)));
@@ -25427,7 +25425,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSURLSessionDownloadTaskResumeData __attribute__((availability(ios, introduced=7_0)));
@@ -25663,7 +25661,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NSUserActivityTypeBrowsingWeb;
@@ -25751,7 +25749,7 @@ namespace TBS
         // +(UIAccelerometer * _Nonnull)sharedAccelerometer;
         [Static]
         [Export("sharedAccelerometer")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         UIAccelerometer SharedAccelerometer { get; }
 
         // @property (nonatomic) NSTimeInterval updateInterval;
@@ -25782,7 +25780,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CGPoint CGPointZero __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.0)));
@@ -25812,7 +25810,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CGAffineTransform CGAffineTransformIdentity __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.0)));
@@ -25822,7 +25820,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCGColorSpaceGenericGray __attribute__((availability(ios, introduced=9.0))) __attribute__((availability(macos, introduced=10.4)));
@@ -25932,7 +25930,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCGColorWhite __attribute__((availability(watchos, unavailable))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, unavailable))) __attribute__((availability(macos, introduced=10.5)));
@@ -25952,7 +25950,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCGFontVariationAxisName __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.4)));
@@ -25986,7 +25984,7 @@ namespace TBS
     unsafe delegate bool CGPDFDictionaryApplierBlock(sbyte* arg0, CGPDFObjectRef* arg1, [NullAllowed] void* arg2);
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCGPDFOutlineTitle __attribute__((availability(ios, introduced=11.0))) __attribute__((availability(macos, introduced=10.13)));
@@ -26011,7 +26009,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCGColorConversionBlackPointCompensation __attribute__((availability(ios, introduced=10.0))) __attribute__((availability(macos, introduced=10.12)));
@@ -26026,7 +26024,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCGPDFContextMediaBox __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.4)));
@@ -26235,7 +26233,7 @@ namespace TBS
         // -(UIBezierPath * _Nonnull)bezierPathByReversingPath __attribute__((availability(ios, introduced=6_0)));
         [iOS(6, 0)]
         [Export("bezierPathByReversingPath")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         UIBezierPath BezierPathByReversingPath { get; }
 
         // -(void)applyTransform:(CGAffineTransform)transform;
@@ -26312,7 +26310,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CATransform3D CATransform3DIdentity __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -26382,7 +26380,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CAMediaTimingFillMode _Nonnull kCAFillModeForwards __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -26471,7 +26469,7 @@ namespace TBS
         // -(CGAffineTransform)affineTransform;
         // -(void)setAffineTransform:(CGAffineTransform)m;
         [Export("affineTransform")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CGAffineTransform AffineTransform { get; set; }
 
         // @property CGRect frame;
@@ -26694,12 +26692,12 @@ namespace TBS
 
         // @property (copy) NSArray * _Nullable filters;
         [NullAllowed, Export("filters", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] Filters { get; set; }
 
         // @property (copy) NSArray * _Nullable backgroundFilters;
         [NullAllowed, Export("backgroundFilters", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] BackgroundFilters { get; set; }
 
         // @property BOOL shouldRasterize;
@@ -26849,7 +26847,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CALayerContentsGravity _Nonnull kCAGravityCenter __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -27061,7 +27059,7 @@ namespace TBS
     {
         // @property (copy) NSArray * _Nullable values;
         [NullAllowed, Export("values", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] Values { get; set; }
 
         // @property CGPathRef _Nullable path;
@@ -27098,7 +27096,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CAAnimationCalculationMode _Nonnull kCAAnimationLinear __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -27186,7 +27184,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CATransitionType _Nonnull kCATransitionFade __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -27331,7 +27329,7 @@ namespace TBS
         // +(EAGLContext * _Nullable)currentContext;
         [Static]
         [NullAllowed, Export("currentContext")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         EAGLContext CurrentContext { get; }
 
         // @property (readonly) EAGLRenderingAPI API;
@@ -27354,7 +27352,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull kEAGLDrawablePropertyRetainedBacking __attribute__((visibility("default")));
@@ -27514,7 +27512,7 @@ namespace TBS
 
         // -(id<CAMetalDrawable> _Nullable)nextDrawable;
         [NullAllowed, Export("nextDrawable")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CAMetalDrawable NextDrawable { get; }
 
         // @property NSUInteger maximumDrawableCount __attribute__((availability(tvos, introduced=11.2))) __attribute__((availability(watchos, introduced=4.2))) __attribute__((availability(ios, introduced=11.2))) __attribute__((availability(macos, introduced=10.13.2)));
@@ -27760,7 +27758,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CAEmitterLayerEmitterShape _Nonnull kCAEmitterLayerPoint __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=5.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -27864,7 +27862,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CAMediaTimingFunctionName _Nonnull kCAMediaTimingFunctionLinear __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -27900,7 +27898,7 @@ namespace TBS
     {
         // @property (copy) NSArray * _Nullable colors;
         [NullAllowed, Export("colors", ArgumentSemantic.Copy)]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] Colors { get; set; }
 
         // @property (copy) NSArray<NSNumber *> * _Nullable locations;
@@ -27921,7 +27919,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CAGradientLayerType _Nonnull kCAGradientLayerAxial __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=3.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -28019,7 +28017,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CAScrollLayerScrollMode _Nonnull kCAScrollNone __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -28098,7 +28096,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CAShapeLayerFillRule _Nonnull kCAFillRuleNonZero __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=3.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -28181,7 +28179,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CATextLayerTruncationMode _Nonnull kCATruncationNone __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=3.2))) __attribute__((availability(macos, introduced=10.5)));
@@ -28238,7 +28236,7 @@ namespace TBS
         // +(CFTimeInterval)fadeDuration;
         [Static]
         [Export("fadeDuration")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         double FadeDuration { get; }
 
         // @property size_t levelsOfDetail;
@@ -28288,7 +28286,7 @@ namespace TBS
         // +(void)setAnimationDuration:(CFTimeInterval)dur;
         [Static]
         [Export("animationDuration")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         double AnimationDuration { get; set; }
 
         // +(CAMediaTimingFunction * _Nullable)animationTimingFunction;
@@ -28336,7 +28334,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull kCATransactionAnimationDuration __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=2.0))) __attribute__((availability(macos, introduced=10.5)));
@@ -28384,7 +28382,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CAValueFunctionName _Nonnull kCAValueFunctionRotateX __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(watchos, introduced=2.0))) __attribute__((availability(ios, introduced=3.0))) __attribute__((availability(macos, introduced=10.6)));
@@ -28613,7 +28611,7 @@ namespace TBS
 
         // -(BOOL)becomeFirstResponder;
         [Export("becomeFirstResponder")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool BecomeFirstResponder { get; }
 
         // @property (readonly, nonatomic) BOOL canResignFirstResponder;
@@ -28622,7 +28620,7 @@ namespace TBS
 
         // -(BOOL)resignFirstResponder;
         [Export("resignFirstResponder")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         bool ResignFirstResponder { get; }
 
         // @property (readonly, nonatomic) BOOL isFirstResponder;
@@ -28806,7 +28804,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull UIKeyInputUpArrow __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=7_0)));
@@ -29157,7 +29155,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CVTime kCVZeroTime __attribute__((visibility("default")));
@@ -29170,7 +29168,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern CFStringRef  _Nonnull const kCVBufferPropagatedAttachmentsKey __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=4.0)));
@@ -29200,7 +29198,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern CFStringRef  _Nonnull const kCVImageBufferCGColorSpaceKey __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=4.0)));
@@ -29525,7 +29523,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern CFStringRef  _Nonnull const kCVPixelBufferPixelFormatTypeKey __attribute__((visibility("default"))) __attribute__((availability(watchos, introduced=4.0))) __attribute__((availability(tvos, introduced=9.0))) __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.4)));
@@ -29620,7 +29618,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kIOSurfaceAllocSize __attribute__((availability(ios, introduced=3.0)));
@@ -29751,7 +29749,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kIOSurfacePlaneComponentNames __attribute__((availability(ios, introduced=11.0)));
@@ -29761,7 +29759,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kIOSurfacePlaneComponentTypes __attribute__((availability(ios, introduced=11.0)));
@@ -29771,7 +29769,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kIOSurfacePlaneComponentRanges __attribute__((availability(ios, introduced=11.0)));
@@ -29781,7 +29779,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kIOSurfaceSubsampling __attribute__((availability(ios, introduced=11.0)));
@@ -29836,7 +29834,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern CFStringRef  _Nonnull const kCVOpenGLESTextureCacheMaximumTextureAgeKey __attribute__((visibility("default"))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(macos, unavailable))) __attribute__((availability(tvos, introduced=9.0, deprecated=12.0))) __attribute__((availability(ios, introduced=5.0, deprecated=12.0)));
@@ -30000,7 +29998,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern CFStringRef  _Nonnull const kCVPixelFormatFillExtendedPixelsCallback __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=4.0)));
@@ -30123,7 +30121,7 @@ namespace TBS
     unsafe delegate bool CGImageMetadataTagBlock(CFStringRef* arg0, CGImageMetadataTagRef* arg1);
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern CFStringRef  _Nonnull const kCGImageMetadataEnumerateRecursively __attribute__((availability(ios, introduced=7.0))) __attribute__((availability(macos, introduced=10.8)));
@@ -30137,7 +30135,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCGImageSourceTypeIdentifierHint __attribute__((availability(ios, introduced=4.0))) __attribute__((availability(macos, introduced=10.4)));
@@ -33145,7 +33143,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CFStringRef _Nonnull kCGImagePropertyPNGCompressionFilter __attribute__((availability(ios, introduced=9.0))) __attribute__((availability(macos, introduced=10.11)));
@@ -33354,7 +33352,7 @@ namespace TBS
         // +(CIImage * _Nonnull)emptyImage;
         [Static]
         [Export("emptyImage")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CIImage EmptyImage { get; }
 
         // -(instancetype _Nonnull)initWithCGImage:(CGImageRef _Nonnull)image;
@@ -33481,7 +33479,7 @@ namespace TBS
         // -(CIImage * _Nonnull)imageByClampingToExtent __attribute__((availability(ios, introduced=8_0)));
         [iOS(8, 0)]
         [Export("imageByClampingToExtent")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CIImage ImageByClampingToExtent { get; }
 
         // -(CIImage * _Nonnull)imageByClampingToRect:(CGRect)rect __attribute__((availability(ios, introduced=10_0)));
@@ -33514,13 +33512,13 @@ namespace TBS
         // -(CIImage * _Nonnull)imageByPremultiplyingAlpha __attribute__((availability(ios, introduced=10_0)));
         [iOS(10, 0)]
         [Export("imageByPremultiplyingAlpha")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CIImage ImageByPremultiplyingAlpha { get; }
 
         // -(CIImage * _Nonnull)imageByUnpremultiplyingAlpha __attribute__((availability(ios, introduced=10_0)));
         [iOS(10, 0)]
         [Export("imageByUnpremultiplyingAlpha")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CIImage ImageByUnpremultiplyingAlpha { get; }
 
         // -(CIImage * _Nonnull)imageBySettingAlphaOneInExtent:(CGRect)extent __attribute__((availability(ios, introduced=10_0)));
@@ -33541,19 +33539,19 @@ namespace TBS
         // -(CIImage * _Nonnull)imageBySamplingLinear __attribute__((availability(ios, introduced=11_0)));
         [iOS(11, 0)]
         [Export("imageBySamplingLinear")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CIImage ImageBySamplingLinear { get; }
 
         // -(CIImage * _Nonnull)imageBySamplingNearest __attribute__((availability(ios, introduced=11_0)));
         [iOS(11, 0)]
         [Export("imageBySamplingNearest")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CIImage ImageBySamplingNearest { get; }
 
         // -(CIImage * _Nonnull)imageByInsertingIntermediate __attribute__((availability(ios, introduced=12_0)));
         [iOS(12, 0)]
         [Export("imageByInsertingIntermediate")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CIImage ImageByInsertingIntermediate { get; }
 
         // -(CIImage * _Nonnull)imageByInsertingIntermediate:(BOOL)cache __attribute__((availability(ios, introduced=12_0)));
@@ -33602,7 +33600,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern CIFormat kCIFormatARGB8 __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=6_0)));
@@ -33791,7 +33789,7 @@ namespace TBS
         // -(NSArray<CIFilter *> * _Nonnull)autoAdjustmentFilters __attribute__((availability(ios, introduced=5_0)));
         [iOS(5, 0)]
         [Export("autoAdjustmentFilters")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CIFilter[] AutoAdjustmentFilters { get; }
 
         // -(NSArray<CIFilter *> * _Nonnull)autoAdjustmentFiltersWithOptions:(NSDictionary<CIImageAutoAdjustmentOption,id> * _Nullable)options __attribute__((availability(ios, introduced=5_0)));
@@ -33801,7 +33799,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CIImageAutoAdjustmentOption _Nonnull kCIImageAutoAdjustEnhance __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=5_0)));
@@ -33921,7 +33919,7 @@ namespace TBS
         [iOS(5, 0)]
         [Static]
         [Export("context")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CIContext Context { get; }
 
         // -(instancetype _Nonnull)initWithOptions:(NSDictionary<CIContextOption,id> * _Nullable)options __attribute__((availability(ios, introduced=5_0)));
@@ -34034,18 +34032,18 @@ namespace TBS
         // -(CGSize)inputImageMaximumSize __attribute__((availability(ios, introduced=5_0)));
         [iOS(5, 0)]
         [Export("inputImageMaximumSize")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CGSize InputImageMaximumSize { get; }
 
         // -(CGSize)outputImageMaximumSize __attribute__((availability(ios, introduced=5_0)));
         [iOS(5, 0)]
         [Export("outputImageMaximumSize")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CGSize OutputImageMaximumSize { get; }
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CIContextOption _Nonnull kCIContextOutputColorSpace __attribute__((visibility("default")));
@@ -34095,7 +34093,7 @@ namespace TBS
         [NoiOS]
         [Static]
         [Export("offlineGPUCount")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         uint OfflineGPUCount { get; }
     }
 
@@ -34150,7 +34148,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CIImageRepresentationOption _Nonnull kCIImageRepresentationAVDepthData __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=11_0)));
@@ -34215,7 +34213,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull kCIAttributeFilterName __attribute__((visibility("default")));
@@ -34686,7 +34684,7 @@ namespace TBS
         // -(CIImage * _Nullable)apply:(CIKernel * _Nonnull)k arguments:(NSArray * _Nullable)args options:(NSDictionary<NSString *,id> * _Nullable)dict __attribute__((availability(ios, unavailable)));
         [NoiOS]
         [Export("apply:arguments:options:")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         [return: NullAllowed]
         CIImage Apply(CIKernel k, [NullAllowed] NSObject[] args, [NullAllowed] NSDictionary<NSString, NSObject> dict);
 
@@ -35132,7 +35130,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull CIDetectorTypeFace __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=5_0)));
@@ -35236,7 +35234,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull CIFeatureTypeFace __attribute__((visibility("default")));
@@ -35414,7 +35412,7 @@ namespace TBS
 
         // @property (readonly) NSArray * _Nullable subFeatures;
         [NullAllowed, Export("subFeatures")]
-        [Verify(StronglyTypedNSArray)]
+        //	[Verify (StronglyTypedNSArray)]
         NSObject[] SubFeatures { get; }
     }
 
@@ -35446,7 +35444,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull kCIImageProviderTileSize __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=9_0)));
@@ -35628,7 +35626,7 @@ namespace TBS
         // -(CIImage * _Nonnull)image;
         // -(void)setImage:(CIImage * _Nonnull)image;
         [Export("image")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         CIImage Image { get; set; }
 
         // -(void)setImage:(CIImage * _Nonnull)image dirtyRect:(CGRect)dirtyRect;
@@ -35727,7 +35725,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull kCISamplerAffineMatrix __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=9_0)));
@@ -35796,7 +35794,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const CIRAWFilterOption kCIInputAllowDraftModeKey __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=10_0)));
@@ -36150,7 +36148,7 @@ namespace TBS
         // -(NSDictionary<NSString *,id> * _Nullable)allAttachments;
         // -(void)setAllAttachments:(NSDictionary<NSString *,id> * _Nonnull)dict;
         [NullAllowed, Export("allAttachments")]
-        [Verify(MethodToProperty)]
+        //	[Verify (MethodToProperty)]
         NSDictionary<NSString, NSObject> AllAttachments { get; set; }
 
         // -(void)removeAllAttachments;
@@ -36184,7 +36182,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern IOSurfacePropertyKey _Nonnull IOSurfacePropertyAllocSizeKey __attribute__((availability(ios, introduced=10.0, deprecated=12.0)));
@@ -36787,7 +36785,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const UIFontDescriptorAttributeName _Nonnull UIFontDescriptorFamilyAttribute __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=7_0)));
@@ -37225,7 +37223,7 @@ namespace TBS
     }
 
     [Static]
-    [Verify(ConstantsInterfaceAssociation)]
+    //[Verify (ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const UIEdgeInsets UIEdgeInsetsZero __attribute__((visibility("default")));
@@ -37699,7 +37697,7 @@ interface UIInputViewAudioFeedback
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UIDeviceOrientationDidChangeNotification __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable)));
@@ -37828,7 +37826,7 @@ interface UITouch
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UIContentSizeCategory _Nonnull UIContentSizeCategoryUnspecified __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=10_0)));
@@ -38291,7 +38289,7 @@ interface UIFocusUpdateContext
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UIFocusDidUpdateNotification __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=11.0))) __attribute__((availability(ios, introduced=11.0)));
@@ -38977,7 +38975,7 @@ interface UIView_UIConstraintBasedLayoutCoreMethods
     // -(BOOL)needsUpdateConstraints __attribute__((availability(ios, introduced=6_0)));
     [iOS(6, 0)]
     [Export("needsUpdateConstraints")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     bool NeedsUpdateConstraints { get; }
 
     // -(void)setNeedsUpdateConstraints __attribute__((availability(ios, introduced=6_0)));
@@ -39028,7 +39026,7 @@ interface UIView_UIConstraintBasedLayoutLayering
     [Deprecated(PlatformName.iOS, 9, 0, message: "Override -viewForFirstBaselineLayout or -viewForLastBaselineLayout as appropriate, instead")]
     [NoTV]
     [Export("viewForBaselineLayout")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIView ViewForBaselineLayout { get; }
 
     // @property (readonly, strong) UIView * _Nonnull viewForFirstBaselineLayout __attribute__((availability(ios, introduced=9_0)));
@@ -39073,7 +39071,7 @@ interface UIView_UIConstraintBasedLayoutLayering
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const CGFloat UIViewNoIntrinsicMetric __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=6_0)));
@@ -39503,7 +39501,7 @@ interface UIRefreshControl
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UIScrollViewDecelerationRate UIScrollViewDecelerationRateNormal __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=3_0)));
@@ -39849,7 +39847,7 @@ interface UIView_UIAccessibilityInvertColors
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern UIAccessibilityTraits UIAccessibilityTraitNone __attribute__((visibility("default")));
@@ -40005,7 +40003,7 @@ partial interface Constants
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSAttributedStringKey _Nonnull UIAccessibilitySpeechAttributePunctuation __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=7_0)));
@@ -40051,7 +40049,7 @@ interface NSObject_UIAccessibilityContainer
 {
     // -(NSInteger)accessibilityElementCount;
     [Export("accessibilityElementCount")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     nint AccessibilityElementCount { get; }
 
     // -(id _Nullable)accessibilityElementAtIndex:(NSInteger)index;
@@ -40066,7 +40064,7 @@ interface NSObject_UIAccessibilityContainer
     // @property (nonatomic, strong) NSArray * _Nullable accessibilityElements __attribute__((availability(ios, introduced=8_0)));
     [iOS(8, 0)]
     [NullAllowed, Export("accessibilityElements", ArgumentSemantic.Strong)]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     NSObject[] AccessibilityElements { get; set; }
 
     // @property (nonatomic) UIAccessibilityContainerType accessibilityContainerType __attribute__((availability(ios, introduced=11_0)));
@@ -40084,13 +40082,13 @@ interface UIAccessibilityContainerDataTableCell
     // @required -(NSRange)accessibilityRowRange;
     [Abstract]
     [Export("accessibilityRowRange")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     NSRange AccessibilityRowRange { get; }
 
     // @required -(NSRange)accessibilityColumnRange;
     [Abstract]
     [Export("accessibilityColumnRange")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     NSRange AccessibilityColumnRange { get; }
 }
 
@@ -40109,13 +40107,13 @@ interface UIAccessibilityContainerDataTable
     // @required -(NSUInteger)accessibilityRowCount;
     [Abstract]
     [Export("accessibilityRowCount")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     nuint AccessibilityRowCount { get; }
 
     // @required -(NSUInteger)accessibilityColumnCount;
     [Abstract]
     [Export("accessibilityColumnCount")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     nuint AccessibilityColumnCount { get; }
 
     // @optional -(NSArray<id<UIAccessibilityContainerDataTableCell>> * _Nullable)accessibilityHeaderElementsForRow:(NSUInteger)row;
@@ -40242,7 +40240,7 @@ interface UITextInputTraits
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UITextContentType _Nonnull UITextContentTypeName __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=10_0)));
@@ -40649,7 +40647,7 @@ interface UITextInput : IUIKeyInput
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull UITextInputTextBackgroundColorKey __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=3_2, deprecated=8_0)));
@@ -40804,7 +40802,7 @@ interface UITextInputMode : INSSecureCoding
     [NoTV]
     [Static]
     [NullAllowed, Export("currentInputMode")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UITextInputMode CurrentInputMode { get; }
 
     // @property (readonly, nonatomic, class) NSArray<UITextInputMode *> * _Nonnull activeInputModes;
@@ -40814,7 +40812,7 @@ interface UITextInputMode : INSSecureCoding
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UITextInputCurrentInputModeDidChangeNotification __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=4_2)));
@@ -41169,7 +41167,7 @@ interface UIImage : INSSecureCoding
     // -(UIImage * _Nonnull)imageFlippedForRightToLeftLayoutDirection __attribute__((availability(ios, introduced=9_0)));
     [iOS(9, 0)]
     [Export("imageFlippedForRightToLeftLayoutDirection")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIImage ImageFlippedForRightToLeftLayoutDirection { get; }
 
     // @property (readonly, nonatomic) BOOL flipsForRightToLeftLayoutDirection __attribute__((availability(ios, introduced=9_0)));
@@ -41180,7 +41178,7 @@ interface UIImage : INSSecureCoding
     // -(UIImage * _Nonnull)imageWithHorizontallyFlippedOrientation __attribute__((availability(ios, introduced=10_0)));
     [iOS(10, 0)]
     [Export("imageWithHorizontallyFlippedOrientation")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIImage ImageWithHorizontallyFlippedOrientation { get; }
 }
 
@@ -41511,7 +41509,7 @@ interface NSObject_UIAccessibility
     // @property (copy, nonatomic) NSArray * _Nullable accessibilityHeaderElements __attribute__((availability(tvos, introduced=9_0))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(ios, unavailable)));
     [TV(9, 0), NoWatch, NoiOS]
     [NullAllowed, Export("accessibilityHeaderElements", ArgumentSemantic.Copy)]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     NSObject[] AccessibilityHeaderElements { get; set; }
 }
 
@@ -41533,13 +41531,13 @@ interface NSObject_UIAccessibilityFocus
     // -(BOOL)accessibilityElementIsFocused __attribute__((availability(ios, introduced=4_0)));
     [iOS(4, 0)]
     [Export("accessibilityElementIsFocused")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     bool AccessibilityElementIsFocused { get; }
 
     // -(NSSet<UIAccessibilityAssistiveTechnologyIdentifier> * _Nullable)accessibilityAssistiveTechnologyFocusedIdentifiers __attribute__((availability(ios, introduced=9_0)));
     [iOS(9, 0)]
     [NullAllowed, Export("accessibilityAssistiveTechnologyFocusedIdentifiers")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     NSSet<NSString> AccessibilityAssistiveTechnologyFocusedIdentifiers { get; }
 }
 
@@ -41551,7 +41549,7 @@ interface NSObject_UIAccessibilityAction
     // -(BOOL)accessibilityActivate __attribute__((availability(ios, introduced=7_0)));
     [iOS(7, 0)]
     [Export("accessibilityActivate")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     bool AccessibilityActivate { get; }
 
     // -(void)accessibilityIncrement __attribute__((availability(ios, introduced=4_0)));
@@ -41572,13 +41570,13 @@ interface NSObject_UIAccessibilityAction
     // -(BOOL)accessibilityPerformEscape __attribute__((availability(ios, introduced=5_0)));
     [iOS(5, 0)]
     [Export("accessibilityPerformEscape")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     bool AccessibilityPerformEscape { get; }
 
     // -(BOOL)accessibilityPerformMagicTap __attribute__((availability(ios, introduced=6_0)));
     [iOS(6, 0)]
     [Export("accessibilityPerformMagicTap")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     bool AccessibilityPerformMagicTap { get; }
 
     // @property (nonatomic, strong) NSArray<UIAccessibilityCustomAction *> * _Nullable accessibilityCustomActions __attribute__((availability(ios, introduced=8_0)));
@@ -41614,7 +41612,7 @@ interface UIAccessibilityReadingContent
     [iOS(5, 0)]
     [Abstract]
     [NullAllowed, Export("accessibilityPageContent")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     string AccessibilityPageContent { get; }
 
     // @optional -(NSAttributedString * _Nullable)accessibilityAttributedContentForLineNumber:(NSInteger)lineNumber __attribute__((availability(tvos, introduced=11.0))) __attribute__((availability(ios, introduced=11.0)));
@@ -41626,7 +41624,7 @@ interface UIAccessibilityReadingContent
     // @optional -(NSAttributedString * _Nullable)accessibilityAttributedPageContent __attribute__((availability(tvos, introduced=11.0))) __attribute__((availability(ios, introduced=11.0)));
     [TV(11, 0), iOS(11, 0)]
     [NullAllowed, Export("accessibilityAttributedPageContent")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     NSAttributedString AccessibilityAttributedPageContent { get; }
 }
 
@@ -41647,7 +41645,7 @@ interface NSObject_UIAccessibilityDragging
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull UIAccessibilityVoiceOverStatusChanged __attribute__((visibility("default"))) __attribute__((availability(tvos, introduced=9.0, deprecated=11.0))) __attribute__((availability(ios, introduced=4.0, deprecated=11.0)));
@@ -41735,7 +41733,7 @@ partial interface Constants
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UIAccessibilityHearingDevicePairedEarDidChangeNotification __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=10_0)));
@@ -41832,7 +41830,7 @@ interface UIImageView
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSTextTabOptionKey _Nonnull NSTabColumnTerminatorsAttributeName __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=7_0)));
@@ -42042,7 +42040,7 @@ interface NSMutableParagraphStyle
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const UITextAttributeFont __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=5_0, deprecated=7_0)));
@@ -42514,7 +42512,7 @@ interface UIActivityIndicatorView : INSCoding
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UIActivityType _Nonnull UIActivityTypePostToFacebook __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=6_0)));
@@ -42623,12 +42621,12 @@ interface UIActivity
 
     // -(BOOL)canPerformWithActivityItems:(NSArray * _Nonnull)activityItems;
     [Export("canPerformWithActivityItems:")]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     bool CanPerformWithActivityItems(NSObject[] activityItems);
 
     // -(void)prepareWithActivityItems:(NSArray * _Nonnull)activityItems;
     [Export("prepareWithActivityItems:")]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     void PrepareWithActivityItems(NSObject[] activityItems);
 
     // @property (readonly, nonatomic) UIViewController * _Nullable activityViewController;
@@ -43570,7 +43568,7 @@ interface UITextFieldDelegate
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UITextFieldTextDidBeginEditingNotification __attribute__((visibility("default")));
@@ -43859,7 +43857,7 @@ interface UIAlertViewDelegate
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSExceptionName _Nonnull UIApplicationInvalidInterfaceOrientationException __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=6_0)));
@@ -43869,7 +43867,7 @@ partial interface Constants
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UIBackgroundTaskIdentifier UIBackgroundTaskInvalid __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=4_0)));
@@ -44094,7 +44092,7 @@ interface UIApplication_UIRemoteNotifications
     [Deprecated(PlatformName.iOS, 8, 0, message: "Use -[UIApplication isRegisteredForRemoteNotifications] and UserNotifications Framework's -[UNUserNotificationCenter getNotificationSettingsWithCompletionHandler:] to retrieve user-enabled remote notification and user notification settings")]
     [NoTV]
     [Export("enabledRemoteNotificationTypes")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIRemoteNotificationType EnabledRemoteNotificationTypes { get; }
 }
 
@@ -44588,7 +44586,7 @@ interface UIApplication_UIApplicationDeprecated
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSRunLoopMode _Nonnull UITrackingRunLoopMode __attribute__((visibility("default")));
@@ -44910,7 +44908,7 @@ interface UIContentContainer
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UIViewControllerShowDetailTargetDidChangeNotification __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=8_0)));
@@ -45287,7 +45285,7 @@ interface UIViewController_UIViewControllerRotation
     [Deprecated(PlatformName.iOS, 8, 0, message: "Header views are animated along with the rest of the view hierarchy")]
     [NoTV]
     [NullAllowed, Export("rotatingHeaderView")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIView RotatingHeaderView { get; }
 
     // -(UIView * _Nullable)rotatingFooterView __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=2_0, deprecated=8_0)));
@@ -45295,7 +45293,7 @@ interface UIViewController_UIViewControllerRotation
     [Deprecated(PlatformName.iOS, 8, 0, message: "Footer views are animated along with the rest of the view hierarchy")]
     [NoTV]
     [NullAllowed, Export("rotatingFooterView")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIView RotatingFooterView { get; }
 
     // @property (readonly, nonatomic) UIInterfaceOrientation interfaceOrientation __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=2_0, deprecated=8_0)));
@@ -45380,7 +45378,7 @@ interface UIViewController_UISearchDisplayControllerSupport
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSExceptionName _Nonnull UIViewControllerHierarchyInconsistencyException __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=5_0)));
@@ -45461,7 +45459,7 @@ interface UIViewController_UIContainerViewControllerCallbacks
     [Deprecated(PlatformName.iOS, 6, 0)]
     [NoTV]
     [Export("automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     bool AutomaticallyForwardAppearanceAndRotationMethodsToChildViewControllers { get; }
 
     // -(BOOL)shouldAutomaticallyForwardRotationMethods __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=6_0, deprecated=8_0)));
@@ -45469,7 +45467,7 @@ interface UIViewController_UIContainerViewControllerCallbacks
     [Deprecated(PlatformName.iOS, 8, 0, message: "Manually forward viewWillTransitionToSize:withTransitionCoordinator: if necessary")]
     [NoTV]
     [Export("shouldAutomaticallyForwardRotationMethods")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     bool ShouldAutomaticallyForwardRotationMethods { get; }
 
     // @property (readonly, nonatomic) BOOL shouldAutomaticallyForwardAppearanceMethods __attribute__((availability(ios, introduced=6_0)));
@@ -45812,7 +45810,7 @@ interface UIActivityViewController
     // -(instancetype _Nonnull)initWithActivityItems:(NSArray * _Nonnull)activityItems applicationActivities:(NSArray<__kindof UIActivity *> * _Nullable)applicationActivities __attribute__((objc_designated_initializer));
     [Export("initWithActivityItems:applicationActivities:")]
     [DesignatedInitializer]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     IntPtr Constructor(NSObject[] activityItems, [NullAllowed] UIActivity[] applicationActivities);
 
     // @property (copy, nonatomic) UIActivityViewControllerCompletionHandler _Nullable completionHandler __attribute__((availability(ios, introduced=6_0, deprecated=8_0)));
@@ -46843,7 +46841,7 @@ interface UICollectionViewDropPlaceholderContext : IUIDragAnimating
     // @required -(BOOL)deletePlaceholder;
     [Abstract]
     [Export("deletePlaceholder")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     bool DeletePlaceholder { get; }
 
     // @required -(void)setNeedsCellUpdate;
@@ -47343,7 +47341,7 @@ interface UICollectionViewLayout_UIReorderingSupportHooks
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull UICollectionElementKindSectionHeader __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=6_0)));
@@ -47543,7 +47541,7 @@ interface UIDatePicker : INSCoding
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UIDocumentStateChangedNotification __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=5_0)));
@@ -47717,7 +47715,7 @@ interface UIDocument : INSFilePresenter, INSProgressReporting
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull NSUserActivityDocumentURLKey __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=8_0)));
@@ -48100,12 +48098,12 @@ interface UICloudSharingController
 
     // -(id<UIActivityItemSource> _Nonnull)activityItemSource;
     [Export("activityItemSource")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIActivityItemSource ActivityItemSource { get; }
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSFileProviderItemIdentifier _Nonnull NSFileProviderRootContainerItemIdentifier __attribute__((availability(tvos, unavailable))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(macos, unavailable))) __attribute__((availability(ios, introduced=11.0)));
@@ -48847,7 +48845,7 @@ interface UITapGestureRecognizer
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const CGFloat UINavigationControllerHideShowBarDuration __attribute__((visibility("default")));
@@ -49053,7 +49051,7 @@ interface UIViewController_UINavigationControllerContextualToolbarItems
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UIImagePickerControllerInfoKey _Nonnull UIImagePickerControllerMediaType __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable)));
@@ -49214,7 +49212,7 @@ interface UIImagePickerController : INSCoding
     // -(BOOL)startVideoCapture __attribute__((availability(ios, introduced=4_0)));
     [iOS(4, 0)]
     [Export("startVideoCapture")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     bool StartVideoCapture { get; }
 
     // -(void)stopVideoCapture __attribute__((availability(ios, introduced=4_0)));
@@ -49582,7 +49580,7 @@ interface UILocalNotification : INSCopying, INSCoding
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull UILocalNotificationDefaultSoundName __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=4_0, deprecated=10_0)));
@@ -49672,7 +49670,7 @@ interface UIMutableApplicationShortcutItem
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull UIUserNotificationTextInputActionButtonTitleKey __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=9_0, deprecated=10_0)));
@@ -49889,13 +49887,13 @@ interface UIFocusDebugger
     // +(id<UIFocusDebuggerOutput> _Nonnull)help;
     [Static]
     [Export("help")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIFocusDebuggerOutput Help { get; }
 
     // +(id<UIFocusDebuggerOutput> _Nonnull)status;
     [Static]
     [Export("status")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIFocusDebuggerOutput Status { get; }
 
     // +(id<UIFocusDebuggerOutput> _Nonnull)checkFocusabilityForItem:(id<UIFocusItem> _Nonnull)item;
@@ -49972,7 +49970,7 @@ interface UILocalizedIndexedCollation
 
     // -(NSArray * _Nonnull)sortedArrayFromArray:(NSArray * _Nonnull)array collationStringSelector:(SEL _Nonnull)selector;
     [Export("sortedArrayFromArray:collationStringSelector:")]
-    [Verify(StronglyTypedNSArray), Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray), Verify (StronglyTypedNSArray)]
     NSObject[] SortedArrayFromArray(NSObject[] array, Selector selector);
 }
 
@@ -50089,7 +50087,7 @@ interface UIMenuController
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UIMenuControllerWillShowMenuNotification __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable)));
@@ -50437,7 +50435,7 @@ interface UINavigationBarDelegate : IUIBarPositioningDelegate
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UINibOptionsKey _Nonnull UINibExternalObjects __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=3_0)));
@@ -50453,7 +50451,7 @@ interface NSBundle_UINibLoadingAdditions
 {
     // -(NSArray * _Nullable)loadNibNamed:(NSString * _Nonnull)name owner:(id _Nullable)owner options:(NSDictionary<UINibOptionsKey,id> * _Nullable)options;
     [Export("loadNibNamed:owner:options:")]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     [return: NullAllowed]
     NSObject[] LoadNibNamed(string name, [NullAllowed] NSObject owner, [NullAllowed] NSDictionary<NSString, NSObject> options);
 }
@@ -50475,7 +50473,7 @@ interface NSObject_UINibLoadingAdditions
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull UINibProxiedObjectsKey __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=2_0, deprecated=3_0)));
@@ -50503,7 +50501,7 @@ interface UINib
 
     // -(NSArray * _Nonnull)instantiateWithOwner:(id _Nullable)ownerOrNil options:(NSDictionary<UINibOptionsKey,id> * _Nullable)optionsOrNil;
     [Export("instantiateWithOwner:options:")]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     NSObject[] InstantiateWithOwner([NullAllowed] NSObject ownerOrNil, [NullAllowed] NSDictionary<NSString, NSObject> optionsOrNil);
 }
 
@@ -50548,7 +50546,7 @@ interface UIPageControl
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UIPageViewControllerOptionsKey _Nonnull UIPageViewControllerOptionSpineLocationKey __attribute__((visibility("default")));
@@ -50676,7 +50674,7 @@ interface UIPageViewControllerDataSource
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UIPasteboardName _Nonnull UIPasteboardNameGeneral __attribute__((visibility("default"))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(tvos, unavailable)));
@@ -50711,7 +50709,7 @@ interface UIPasteboard
     // +(UIPasteboard * _Nonnull)pasteboardWithUniqueName;
     [Static]
     [Export("pasteboardWithUniqueName")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIPasteboard PasteboardWithUniqueName { get; }
 
     // @property (readonly, nonatomic) UIPasteboardName _Nonnull name;
@@ -50803,7 +50801,7 @@ interface UIPasteboard
 
     // -(NSArray * _Nullable)valuesForPasteboardType:(NSString * _Nonnull)pasteboardType inItemSet:(NSIndexSet * _Nullable)itemSet;
     [Export("valuesForPasteboardType:inItemSet:")]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     [return: NullAllowed]
     NSObject[] ValuesForPasteboardType(string pasteboardType, [NullAllowed] NSIndexSet itemSet);
 
@@ -50887,7 +50885,7 @@ interface UIPasteboard
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UIPasteboardOption _Nonnull UIPasteboardOptionExpirationDate __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=10_0))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(tvos, unavailable)));
@@ -51083,19 +51081,19 @@ interface UIPopoverBackgroundViewMethods
     // @required +(CGFloat)arrowBase;
     [Static, Abstract]
     [Export("arrowBase")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     nfloat ArrowBase { get; }
 
     // @required +(UIEdgeInsets)contentViewInsets;
     [Static, Abstract]
     [Export("contentViewInsets")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIEdgeInsets ContentViewInsets { get; }
 
     // @required +(CGFloat)arrowHeight;
     [Static, Abstract]
     [Export("arrowHeight")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     nfloat ArrowHeight { get; }
 }
 
@@ -51289,7 +51287,7 @@ interface UIPrinterPickerController
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSErrorDomain _Nonnull UIPrintErrorDomain __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable)));
@@ -51424,7 +51422,7 @@ interface UIView_UIPrintFormatter
     // -(UIViewPrintFormatter * _Nonnull)viewPrintFormatter __attribute__((availability(tvos, unavailable)));
     [NoTV]
     [Export("viewPrintFormatter")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIViewPrintFormatter ViewPrintFormatter { get; }
 
     // -(void)drawRect:(CGRect)rect forViewPrintFormatter:(UIViewPrintFormatter * _Nonnull)formatter __attribute__((availability(tvos, unavailable)));
@@ -51446,7 +51444,7 @@ interface UIPrintInfo : INSCopying, INSCoding
     // +(UIPrintInfo * _Nonnull)printInfo;
     [Static]
     [Export("printInfo")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIPrintInfo PrintInfo { get; }
 
     // +(UIPrintInfo * _Nonnull)printInfoWithDictionary:(NSDictionary * _Nullable)dictionary;
@@ -51558,7 +51556,7 @@ interface UIPrintInteractionController
 
     // @property (copy, nonatomic) NSArray * _Nullable printingItems;
     [NullAllowed, Export("printingItems", ArgumentSemantic.Copy)]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     NSObject[] PrintingItems { get; set; }
 
     // -(BOOL)presentAnimated:(BOOL)animated completionHandler:(UIPrintInteractionCompletionHandler _Nullable)completion;
@@ -51629,7 +51627,7 @@ interface UIPrintInteractionControllerDelegate
     // @optional -(UIPrinterCutterBehavior)printInteractionController:(UIPrintInteractionController * _Nonnull)printInteractionController chooseCutterBehavior:(NSArray * _Nonnull)availableBehaviors __attribute__((availability(ios, introduced=9_0)));
     [iOS(9, 0)]
     [Export("printInteractionController:chooseCutterBehavior:")]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     UIPrinterCutterBehavior PrintInteractionController(UIPrintInteractionController printInteractionController, NSObject[] availableBehaviors);
 }
 
@@ -51723,7 +51721,7 @@ interface UIPrintPaper_Deprecated_Nonfunctional
     // -(CGRect)printRect __attribute__((availability(tvos, unavailable)));
     [NoTV]
     [Export("printRect")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     CGRect PrintRect { get; }
 }
 
@@ -51822,7 +51820,7 @@ interface UIRotationGestureRecognizer
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UIScreenDidConnectNotification __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=3_2)));
@@ -52601,7 +52599,7 @@ interface UISpringTimingParameters : IUITimingCurveProvider
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UITransitionContextViewControllerKey _Nonnull UITransitionContextFromViewControllerKey __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=7_0)));
@@ -53246,7 +53244,7 @@ interface UITableViewCell_UIDeprecated
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull UITableViewIndexSearch __attribute__((visibility("default"))) __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=3_0)));
@@ -53511,7 +53509,7 @@ interface UITableViewDelegate : IUIScrollViewDelegate
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UITableViewSelectionDidChangeNotification __attribute__((visibility("default")));
@@ -54178,7 +54176,7 @@ interface UITableViewDropPlaceholderContext : IUIDragAnimating
     // @required -(BOOL)deletePlaceholder;
     [Abstract]
     [Export("deletePlaceholder")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     bool DeletePlaceholder { get; }
 }
 
@@ -54335,7 +54333,7 @@ interface UISegmentedControl : INSCoding
 {
     // -(instancetype _Nonnull)initWithItems:(NSArray * _Nullable)items;
     [Export("initWithItems:")]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     IntPtr Constructor([NullAllowed] NSObject[] items);
 
     // @property (nonatomic) UISegmentedControlStyle segmentedControlStyle __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=2_0, deprecated=7_0)));
@@ -54580,7 +54578,7 @@ interface UISlider : INSCoding
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const CGFloat UISplitViewControllerAutomaticDimension __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=8_0)));
@@ -54869,7 +54867,7 @@ interface UIStoryboard
 
     // -(__kindof UIViewController * _Nullable)instantiateInitialViewController;
     [Export("instantiateInitialViewController")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIViewController InstantiateInitialViewController { get; }
 
     // -(__kindof UIViewController * _Nonnull)instantiateViewControllerWithIdentifier:(NSString * _Nonnull)identifier;
@@ -55285,7 +55283,7 @@ interface UITabBarItem
     [Deprecated(PlatformName.iOS, 7, 0)]
     [NoTV]
     [NullAllowed, Export("finishedSelectedImage")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIImage FinishedSelectedImage { get; }
 
     // -(UIImage * _Nullable)finishedUnselectedImage __attribute__((availability(tvos, unavailable))) __attribute__((availability(ios, introduced=5_0, deprecated=7_0)));
@@ -55293,7 +55291,7 @@ interface UITabBarItem
     [Deprecated(PlatformName.iOS, 7, 0)]
     [NoTV]
     [NullAllowed, Export("finishedUnselectedImage")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     UIImage FinishedUnselectedImage { get; }
 
     // @property (assign, readwrite, nonatomic) UIOffset titlePositionAdjustment __attribute__((annotate("ui_appearance_selector"))) __attribute__((availability(ios, introduced=5_0)));
@@ -55630,7 +55628,7 @@ interface UITextView_ : IUITextDraggable, IUITextDroppable, IUITextPasteConfigur
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull UITextViewTextDidBeginEditingNotification __attribute__((visibility("default")));
@@ -56005,7 +56003,7 @@ interface UIWindow
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UIWindowLevel UIWindowLevelNormal __attribute__((visibility("default")));
@@ -56397,7 +56395,7 @@ interface UISpringLoadedInteractionContext
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSAttributedStringKey _Nonnull NSFontAttributeName __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=6_0)));
@@ -56507,7 +56505,7 @@ partial interface Constants
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSTextEffectStyle _Nonnull NSTextEffectLetterpressStyle __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=7_0)));
@@ -56528,7 +56526,7 @@ interface NSMutableAttributedString_NSAttributedStringAttributeFixing
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSAttributedStringDocumentType _Nonnull NSPlainTextDocumentType __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=7_0)));
@@ -57008,7 +57006,7 @@ interface NSTextStorageDelegate
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const NSNotificationName _Nonnull NSTextStorageWillProcessEditingNotification __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=7_0)));
@@ -57228,12 +57226,12 @@ interface NSLayoutManager : INSCoding
 
     // -(NSUInteger)firstUnlaidCharacterIndex;
     [Export("firstUnlaidCharacterIndex")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     nuint FirstUnlaidCharacterIndex { get; }
 
     // -(NSUInteger)firstUnlaidGlyphIndex;
     [Export("firstUnlaidGlyphIndex")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     nuint FirstUnlaidGlyphIndex { get; }
 
     // -(NSTextContainer * _Nullable)textContainerForGlyphAtIndex:(NSUInteger)glyphIndex effectiveRange:(NSRangePointer _Nullable)effectiveGlyphRange;
@@ -57545,7 +57543,7 @@ interface NSAttributedString_NSStringDrawing
     // -(CGSize)size __attribute__((availability(ios, introduced=6_0)));
     [iOS(6, 0)]
     [Export("size")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     CGSize Size { get; }
 
     // -(void)drawAtPoint:(CGPoint)point __attribute__((availability(ios, introduced=6_0)));
@@ -58204,7 +58202,7 @@ interface UIGravityBehavior
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern const UIFloatRange UIFloatRangeZero __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=9_0)));
@@ -58727,7 +58725,7 @@ interface UIGraphicsRenderer_UIGraphicsRendererProtected
     [iOS(10, 0)]
     [Static]
     [Export("rendererContextClass")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     Class RendererContextClass { get; }
 
     // +(CGContextRef _Nullable)contextWithFormat:(UIGraphicsRendererFormat * _Nonnull)format __attribute__((availability(ios, introduced=10_0))) __attribute__((cf_returns_retained));
@@ -58784,7 +58782,7 @@ interface UIPencilInteractionDelegate
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull UIDocumentBrowserErrorDomain __attribute__((availability(tvos, unavailable))) __attribute__((availability(watchos, unavailable))) __attribute__((availability(macos, unavailable))) __attribute__((availability(ios, introduced=11.0)));
@@ -59041,7 +59039,7 @@ interface WKContentRuleListStore
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull WKErrorDomain __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=8.0))) __attribute__((availability(macos, introduced=10.10)));
@@ -59170,22 +59168,22 @@ interface WKWebView
 
     // -(WKNavigation * _Nullable)goBack;
     [NullAllowed, Export("goBack")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     WKNavigation GoBack { get; }
 
     // -(WKNavigation * _Nullable)goForward;
     [NullAllowed, Export("goForward")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     WKNavigation GoForward { get; }
 
     // -(WKNavigation * _Nullable)reload;
     [NullAllowed, Export("reload")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     WKNavigation Reload { get; }
 
     // -(WKNavigation * _Nullable)reloadFromOrigin;
     [NullAllowed, Export("reloadFromOrigin")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     WKNavigation ReloadFromOrigin { get; }
 
     // -(void)stopLoading;
@@ -59237,7 +59235,7 @@ interface WKWebView_WKDeprecated
     [Introduced(PlatformName.MacOSX, 10, 11)]
     [Deprecated(PlatformName.MacOSX, 10, 12)]
     [Export("certificateChain", ArgumentSemantic.Copy)]
-    [Verify(StronglyTypedNSArray)]
+    //	[Verify (StronglyTypedNSArray)]
     NSObject[] CertificateChain { get; }
 }
 
@@ -59427,7 +59425,7 @@ interface WKPreviewActionItem : IUIPreviewActionItem
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const WKPreviewActionItemIdentifierOpen __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=10.0)));
@@ -59772,7 +59770,7 @@ interface WKWebViewConfiguration_WKDeprecated
 }
 
 [Static]
-[Verify(ConstantsInterfaceAssociation)]
+//[Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
     // extern NSString *const _Nonnull WKWebsiteDataTypeFetchCache __attribute__((visibility("default"))) __attribute__((availability(ios, introduced=11.3))) __attribute__((availability(macos, introduced=10.13.4)));
@@ -59849,13 +59847,13 @@ interface WKWebsiteDataStore : INSSecureCoding
     // +(WKWebsiteDataStore * _Nonnull)defaultDataStore;
     [Static]
     [Export("defaultDataStore")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     WKWebsiteDataStore DefaultDataStore { get; }
 
     // +(WKWebsiteDataStore * _Nonnull)nonPersistentDataStore;
     [Static]
     [Export("nonPersistentDataStore")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     WKWebsiteDataStore NonPersistentDataStore { get; }
 
     // @property (readonly, getter = isPersistent, nonatomic) BOOL persistent;
@@ -59865,7 +59863,7 @@ interface WKWebsiteDataStore : INSSecureCoding
     // +(NSSet<NSString *> * _Nonnull)allWebsiteDataTypes;
     [Static]
     [Export("allWebsiteDataTypes")]
-    [Verify(MethodToProperty)]
+    //	[Verify (MethodToProperty)]
     NSSet<NSString> AllWebsiteDataTypes { get; }
 
     // -(void)fetchDataRecordsOfTypes:(NSSet<NSString *> * _Nonnull)dataTypes completionHandler:(void (^ _Nonnull)(NSArray<WKWebsiteDataRecord *> * _Nonnull))completionHandler;
@@ -59946,7 +59944,5 @@ interface TBSWebViewController
 interface TBSWKWebView
 {
 }
-
-
 
 }

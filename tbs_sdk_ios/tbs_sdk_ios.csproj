@@ -39,16 +39,12 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiDefinition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structs.cs" />
     <Compile Include="TBSPlus.linkwith.cs">
       <DependentUpon>TBSPlus.a</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ObjcBindingNativeLibrary Include="TBSPlus.a" />
