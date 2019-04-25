@@ -39,9 +39,9 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiDefinition.cs" />
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Structs.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
     <Compile Include="TBSPlus.linkwith.cs">
       <DependentUpon>TBSPlus.a</DependentUpon>
     </Compile>
