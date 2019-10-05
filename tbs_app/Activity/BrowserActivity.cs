@@ -300,7 +300,7 @@ namespace tbs_app
 
             InitProgressBar();
 
-            mWebView.SetWebViewClient(new CusWebViewClient((view, args) =>
+            var webViewClient = new CusWebViewClient((view, args) =>
             {
 
                 mTestHandler = new Android.OS.Handler(callback =>
@@ -323,8 +323,10 @@ namespace tbs_app
                 if (int.Parse(Android.OS.Build.VERSION.Sdk) >= 16)
                     ChangGoForwardButton(view);
 
-            }));
-            mWebView.SetWebChromeClient(new CusWebChromeClient(currentActivity));
+            });
+            mWebView.WebViewClient = webViewClient;
+            var webChromeClient = new CusWebChromeClient(currentActivity);
+            mWebView.WebChromeClient = webChromeClient;
             mWebView.SetDownloadListener(new CusDownloadListener(currentActivity));
 
             WebSettings webSetting = mWebView.Settings;

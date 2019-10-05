@@ -29,7 +29,7 @@ namespace tbs_app
 
 
             webView = FindViewById<X5WebView>(Resource.Id.web_filechooser);
-            webView.SetWebChromeClient(new CusWebChromeClient
+            webView.WebChromeClient = new CusWebChromeClient
             {
                 OnOpenFileChooser = (arg0, arg1, arg2) =>
                 {
@@ -39,7 +39,7 @@ namespace tbs_app
                     uploadFile = arg0;
                     OpenFileChooseProcess();
                 }
-            });
+            };
 
             webView.LoadUrl("file:///android_asset/webpage/fileChooser.html");
 

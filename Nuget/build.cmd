@@ -1,4 +1,4 @@
-set tbs_sdkVersion=4.3.0
+set tbs_sdkVersion=4.3.0.1148
 set tbs_sdk_withfilereaderVersion=3.2.0
 
 msbuild ../tbs_sdk/tbs_sdk.csproj /t:Rebuild /p:Configuration=Release

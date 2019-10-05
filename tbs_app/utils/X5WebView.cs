@@ -29,8 +29,7 @@ namespace tbs_app.utils
         [Android.Annotation.SuppressLint(Value = new string[] { "SetJavaScriptEnabled" })]
         public X5WebView(Context arg0, Android.Util.IAttributeSet arg1) : base(arg0, arg1)
         {
-            // this.WebViewClient = client;
-            this.SetWebViewClient(client);
+            this.WebViewClient = client;
 
             // this.setWebChromeClient(chromeClient);
             // WebStorage webStorage = WebStorage.getInstance();

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>tbs_android_sdk</id>
-    <version>4.3.0</version>
+    <version>4.3.0.1148</version>
     <authors>ricarod_jar</authors>
     <owners>ricarod_jar</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

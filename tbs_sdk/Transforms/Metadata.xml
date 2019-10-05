@@ -7,6 +7,11 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
 
-  <attr path="/api/package[@name='com.tencent.smtt.export.external.interfaces']/interface[@name='DownloadListener']/method[@name='onDownloadStart' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='long']]" name="managedName">onDownloadedStart</attr>
+  <attr path="/api/package[@name='com.tencent.smtt.export.external.interfaces']/interface[@name='DownloadListener']/method[@name='onDownloadStart' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='long']]" name="managedName">onDownloadStart</attr>
+
+  <attr path="/api/package[@name='com.tencent.smtt.sdk']/class[@name='UrlRequestBuilderImpl']/method[@name='setPriority' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Tencent.Smtt.Export.External.Interfaces.UrlRequest.Builder</attr>
+  <attr path="/api/package[@name='com.tencent.smtt.sdk']/class[@name='UrlRequestBuilderImpl']/method[@name='addHeader' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]" name="managedReturn">Com.Tencent.Smtt.Export.External.Interfaces.UrlRequest.Builder</attr>
+  <attr path="/api/package[@name='com.tencent.smtt.sdk']/class[@name='UrlRequestBuilderImpl']/method[@name='disableCache' and count(parameter)=0]" name="managedReturn">Com.Tencent.Smtt.Export.External.Interfaces.UrlRequest.Builder</attr>
+  
   
 </metadata>

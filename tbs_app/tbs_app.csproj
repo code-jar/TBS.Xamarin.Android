@@ -69,7 +69,7 @@
     <Compile Include="utils\X5WebView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidNativeLibrary Include="jniLibs\armeabi\liblbs.so" />
+    <None Include="jniLibs\armeabi\libtbs.so" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
@@ -102,15 +102,15 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NLog">
-      <Version>4.6.2</Version>
+      <Version>4.6.7</Version>
     </PackageReference>
     <PackageReference Include="NLog.Config">
-      <Version>4.6.2</Version>
+      <Version>4.6.7</Version>
     </PackageReference>
-    <PackageReference Include="tbs_sdk_withfilereader">
-      <Version>3.2.0</Version>
+    <PackageReference Include="tbs_android_sdk">
+      <Version>4.3.0.1148</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xhdpi\color_progressbar.xml" />
